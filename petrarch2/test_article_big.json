@@ -1,0 +1,722 @@
+{
+	"type": "story",
+	"doc_id": "nigeria_nationalmirror20160826.0005",
+	"head_line": "I preach the gospel with comedy",
+	"date_line": "Fri, 26 Aug 2016 04:21:21 +0000",
+	"sentences": {
+		"initialSize": 16,
+		"array": [{
+			"sentence_id": 1,
+			"sentence": "Could you tell us more about yourself?",
+			"parse_sentence": "(ROOT (SQ (MD Could) (NP (PRP you)) (VP (VB tell) (NP (PRP us)) (NP (NP (JJR more)) (PP (IN about) (NP (PRP yourself))))) (. ?)))",
+			"dependency_tree": "-\u003e tell/VB (root)\n  -\u003e Could/MD (aux)\n  -\u003e you/PRP (nsubj)\n  -\u003e us/PRP (iobj)\n  -\u003e more/JJR (dobj)\n    -\u003e yourself/PRP (nmod:about)\n      -\u003e about/IN (case)\n",
+			"token": "Could,you,tell,us,more,about,yourself,?",
+			"lemma": "could,you,tell,we,more,about,yourself,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 2,
+			"sentence": "They call me the only comedian with so many titles from over ten languages.",
+			"parse_sentence": "(ROOT (S (NP (PRP They)) (VP (VBP call) (S (NP (PRP me)) (NP (NP (DT the) (JJ only) (NN comedian)) (PP (IN with) (NP (NP (ADJP (RB so) (JJ many)) (NNS titles)) (PP (IN from) (NP (QP (IN over) (CD ten)) (NNS languages)))))))) (. .)))",
+			"dependency_tree": "-\u003e call/VBP (root)\n  -\u003e They/PRP (nsubj)\n  -\u003e comedian/NN (xcomp)\n    -\u003e me/PRP (nsubj)\n    -\u003e the/DT (det)\n    -\u003e only/JJ (amod)\n    -\u003e titles/NNS (nmod:with)\n      -\u003e with/IN (case)\n      -\u003e many/JJ (amod)\n        -\u003e so/RB (advmod)\n      -\u003e languages/NNS (nmod:from)\n        -\u003e from/IN (case)\n        -\u003e ten/CD (nummod)\n          -\u003e over/IN (advmod)\n",
+			"token": "They,call,me,the,only,comedian,with,so,many,titles,from,over,ten,languages,.",
+			"lemma": "they,call,I,the,only,comedian,with,so,many,title,from,over,ten,language,.",
+			"ner": "(NUMBER,ten)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 3,
+			"sentence": "I am the High Chief of WAZOBIA Max TV, a standup comedian, the Assistant Secretary General Abuja Body of Comedians and an On Air Personality with Cool FM and now a TV host with WAZOBIA Max TV, all this was after I left Hot FM, where I first hosted a comedy show.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP I)) (VP (VBP am) (NP (NP (NP (DT the) (JJ High) (NNP Chief)) (PP (IN of) (NP (NNP WAZOBIA) (NNP Max) (NN TV)))) (, ,) (NP (DT a) (NN standup) (NN comedian))))) (, ,) (NP (NP (NP (DT the) (NNP Assistant) (NNP Secretary) (NNP General) (NNP Abuja) (NNP Body)) (PP (IN of) (NP (NNPS Comedians)))) (CC and) (NP (NP (DT an) (NNP On) (NNP Air) (NN Personality)) (PP (IN with) (NP (NP (JJ Cool) (NN FM)) (CC and) (NP (ADVP (RB now)) (NP (DT a) (NN TV) (NN host)) (PP (IN with) (NP (NNP WAZOBIA) (NNP Max) (NN TV)))))))) (, ,) (NP (PDT all) (DT this)) (VP (VBD was) (SBAR (IN after) (S (NP (PRP I)) (VP (VBD left) (NP (NP (NNP Hot) (NNP FM)) (, ,) (SBAR (WHADVP (WRB where)) (S (NP (PRP I)) (ADVP (RB first)) (VP (VBD hosted) (NP (DT a) (NN comedy) (NN show)))))))))) (. .)))",
+			"dependency_tree": "-\u003e was/VBD (root)\n  -\u003e Chief/NNP (ccomp)\n    -\u003e I/PRP (nsubj)\n    -\u003e am/VBP (cop)\n    -\u003e the/DT (det)\n    -\u003e High/JJ (amod)\n    -\u003e TV/NN (nmod:of)\n      -\u003e of/IN (case)\n      -\u003e WAZOBIA/NNP (compound)\n      -\u003e Max/NNP (compound)\n    -\u003e comedian/NN (appos)\n      -\u003e a/DT (det)\n      -\u003e standup/NN (compound)\n  -\u003e Body/NNP (nsubj)\n    -\u003e the/DT (det)\n    -\u003e Assistant/NNP (compound)\n    -\u003e Secretary/NNP (compound)\n    -\u003e General/NNP (compound)\n    -\u003e Abuja/NNP (compound)\n    -\u003e Comedians/NNPS (nmod:of)\n      -\u003e of/IN (case)\n    -\u003e and/CC (cc)\n    -\u003e Personality/NN (conj:and)\n      -\u003e an/DT (det)\n      -\u003e On/NNP (compound)\n      -\u003e Air/NNP (compound)\n      -\u003e FM/NN (nmod:with)\n        -\u003e with/IN (case)\n        -\u003e Cool/JJ (amod)\n        -\u003e and/CC (cc)\n        -\u003e host/NN (conj:and)\n          -\u003e now/RB (advmod)\n          -\u003e a/DT (det)\n          -\u003e TV/NN (compound)\n          -\u003e TV/NN (nmod:with)\n            -\u003e with/IN (case)\n            -\u003e WAZOBIA/NNP (compound)\n            -\u003e Max/NNP (compound)\n      -\u003e host/NN (nmod:with)\n  -\u003e Personality/NN (nsubj)\n  -\u003e this/DT (nsubj)\n    -\u003e all/PDT (det:predet)\n  -\u003e left/VBD (advcl)\n    -\u003e after/IN (mark)\n    -\u003e I/PRP (nsubj)\n    -\u003e FM/NNP (dobj)\n      -\u003e Hot/NNP (compound)\n      -\u003e hosted/VBD (acl:relcl)\n        -\u003e where/WRB (advmod)\n        -\u003e I/PRP (nsubj)\n        -\u003e first/RB (advmod)\n        -\u003e show/NN (dobj)\n          -\u003e a/DT (det)\n          -\u003e comedy/NN (compound)\n",
+			"token": "I,am,the,High,Chief,of,WAZOBIA,Max,TV,,,a,standup,comedian,,,the,Assistant,Secretary,General,Abuja,Body,of,Comedians,and,an,On,Air,Personality,with,Cool,FM,and,now,a,TV,host,with,WAZOBIA,Max,TV,,,all,this,was,after,I,left,Hot,FM,,,where,I,first,hosted,a,comedy,show,.",
+			"lemma": "I,be,the,high,Chief,of,WAZOBIA,Max,tv,,,a,standup,comedian,,,the,Assistant,Secretary,General,Abuja,Body,of,Comedians,and,a,On,Air,personality,with,cool,fm,and,now,a,tv,host,with,WAZOBIA,Max,tv,,,all,this,be,after,I,leave,Hot,FM,,,where,I,first,host,a,comedy,show,.",
+			"ner": "(PERSON,Abuja|Body),(DATE,now),(ORGANIZATION,WAZOBIA|Max|TV|WAZOBIA|Max|TV),(ORDINAL,first)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 4,
+			"sentence": "How did you start this journey that landed you many titles and jobs?",
+			"parse_sentence": "(ROOT (SBARQ (WHADVP (WRB How)) (SQ (VBD did) (NP (PRP you)) (VP (VB start) (NP (NP (DT this) (NN journey)) (SBAR (WHNP (WDT that)) (S (VP (VBD landed) (NP (PRP you)) (NP (JJ many) (NNS titles) (CC and) (NNS jobs)))))))) (. ?)))",
+			"dependency_tree": "-\u003e start/VB (root)\n  -\u003e How/WRB (advmod)\n  -\u003e did/VBD (aux)\n  -\u003e you/PRP (nsubj)\n  -\u003e journey/NN (dobj)\n    -\u003e this/DT (det)\n    -\u003e landed/VBD (acl:relcl)\n      -\u003e that/WDT (nsubj)\n      -\u003e you/PRP (iobj)\n      -\u003e titles/NNS (dobj)\n        -\u003e many/JJ (amod)\n        -\u003e and/CC (cc)\n        -\u003e jobs/NNS (conj:and)\n      -\u003e jobs/NNS (dobj)\n",
+			"token": "How,did,you,start,this,journey,that,landed,you,many,titles,and,jobs,?",
+			"lemma": "how,do,you,start,this,journey,that,land,you,many,title,and,job,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 5,
+			"sentence": "I started comedy when I was in secondary school far back in 1997 but I went in fully 1998 when I was in the higher institution.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP I)) (VP (VBD started) (NP (NN comedy)) (SBAR (WHADVP (WRB when)) (S (NP (PRP I)) (VP (VBD was) (PP (IN in) (NP (JJ secondary) (NN school))) (ADVP (RB far) (RB back) (PP (IN in) (NP (CD 1997))))))))) (CC but) (S (NP (PRP I)) (VP (VBD went) (ADVP (IN in)) (ADJP (RB fully) (NP (CD 1998))) (SBAR (WHADVP (WRB when)) (S (NP (PRP I)) (VP (VBD was) (PP (IN in) (NP (DT the) (JJR higher) (NN institution)))))))) (. .)))",
+			"dependency_tree": "-\u003e started/VBD (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e comedy/NN (dobj)\n  -\u003e school/NN (advcl:in)\n    -\u003e when/WRB (advmod)\n    -\u003e I/PRP (nsubj)\n    -\u003e was/VBD (cop)\n    -\u003e in/IN (case)\n    -\u003e secondary/JJ (amod)\n    -\u003e back/RB (advmod)\n      -\u003e far/RB (advmod)\n      -\u003e 1997/CD (nmod:in)\n        -\u003e in/IN (case)\n  -\u003e but/CC (cc)\n  -\u003e went/VBD (conj:but)\n    -\u003e I/PRP (nsubj)\n    -\u003e in/IN (advmod)\n    -\u003e fully/RB (xcomp)\n      -\u003e 1998/CD (dep)\n    -\u003e institution/NN (advcl:in)\n      -\u003e when/WRB (advmod)\n      -\u003e I/PRP (nsubj)\n      -\u003e was/VBD (cop)\n      -\u003e in/IN (case)\n      -\u003e the/DT (det)\n      -\u003e higher/JJR (amod)\n",
+			"token": "I,started,comedy,when,I,was,in,secondary,school,far,back,in,1997,but,I,went,in,fully,1998,when,I,was,in,the,higher,institution,.",
+			"lemma": "I,start,comedy,when,I,be,in,secondary,school,far,back,in,1997,but,I,go,in,fully,1998,when,I,be,in,the,higher,institution,.",
+			"ner": "(DATE,1997|1998)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 6,
+			"sentence": "In 2002 I hosted my first show ‘Night of One Thousand and One Laughs with Free Food’’ where I had to gather boys in my hostel before we wrote our last exams, I cooked the food because everybody was broke and without food but God so kind I still had about a bag of rice and cans of tin tomatoes.",
+			"parse_sentence": "(ROOT (S (PP (IN In) (NP (CD 2002))) (S (NP (PRP I)) (VP (VBD hosted) (SBAR (S (NP (NP (PRP$ my) (JJ first) (NN show)) (`` `) (NP (NP (NN Night)) (PP (IN of) (NP (CD One) (NNP Thousand)))) (CC and) (CD One)) (VP (VBZ Laughs) (PP (IN with) (NP (NP (NNP Free) (NNP Food) (\u0027\u0027 \u0027\u0027)) (SBAR (WHADVP (WRB where)) (S (NP (PRP I)) (VP (VBD had) (S (VP (TO to) (VP (VB gather) (NP (NP (NNS boys)) (PP (IN in) (NP (PRP$ my) (NN hostel)))) (SBAR (IN before) (S (NP (PRP we)) (VP (VBD wrote) (NP (PRP$ our) (JJ last) (NNS exams)))))))))))))))))) (, ,) (S (NP (PRP I)) (VP (VBD cooked) (NP (DT the) (NN food)) (SBAR (SBAR (IN because) (S (NP (NN everybody)) (VP (VBD was) (VP (VBN broke))))) (CC and) (S (PP (IN without) (NP (NP (NN food)) (PP (CC but) (NP (NNP God))))) (RB so) (NP (RB kind) (PRP I)) (ADVP (RB still)) (VP (VBD had) (NP (NP (IN about) (DT a) (NN bag)) (PP (IN of) (NP (NN rice) (CC and) (NP (NP (NNS cans)) (PP (IN of) (NP (NN tin) (NNS tomatoes)))))))))))) (. .)))",
+			"dependency_tree": "-\u003e hosted/VBD (root)\n  -\u003e 2002/CD (nmod:in)\n    -\u003e In/IN (case)\n  -\u003e I/PRP (nsubj)\n  -\u003e Laughs/VBZ (ccomp)\n    -\u003e show/NN (nsubj)\n      -\u003e my/PRP$ (nmod:poss)\n      -\u003e first/JJ (amod)\n      -\u003e Night/NN (compound)\n        -\u003e Thousand/NNP (nmod:of)\n          -\u003e of/IN (case)\n          -\u003e One/CD (nummod)\n      -\u003e and/CC (cc)\n      -\u003e One/CD (conj:and)\n    -\u003e One/CD (nsubj)\n    -\u003e Food/NNP (nmod:with)\n      -\u003e with/IN (case)\n      -\u003e Free/NNP (compound)\n      -\u003e had/VBD (acl:relcl)\n        -\u003e where/WRB (advmod)\n        -\u003e I/PRP (nsubj)\n        -\u003e gather/VB (xcomp)\n          -\u003e to/TO (mark)\n          -\u003e boys/NNS (dobj)\n            -\u003e hostel/NN (nmod:in)\n              -\u003e in/IN (case)\n              -\u003e my/PRP$ (nmod:poss)\n          -\u003e wrote/VBD (advcl)\n            -\u003e before/IN (mark)\n            -\u003e we/PRP (nsubj)\n            -\u003e exams/NNS (dobj)\n              -\u003e our/PRP$ (nmod:poss)\n              -\u003e last/JJ (amod)\n  -\u003e cooked/VBD (parataxis)\n    -\u003e I/PRP (nsubj)\n    -\u003e food/NN (dobj)\n      -\u003e the/DT (det)\n    -\u003e broke/VBN (advcl)\n      -\u003e because/IN (mark)\n      -\u003e everybody/NN (nsubjpass)\n      -\u003e was/VBD (auxpass)\n      -\u003e and/CC (cc)\n      -\u003e had/VBD (conj:and)\n        -\u003e food/NN (nmod:without)\n          -\u003e without/IN (case)\n          -\u003e God/NNP (nmod:but)\n            -\u003e but/CC (case)\n        -\u003e so/RB (advmod)\n        -\u003e I/PRP (nsubj)\n          -\u003e kind/RB (advmod)\n        -\u003e still/RB (advmod)\n        -\u003e bag/NN (dobj)\n          -\u003e about/IN (amod)\n          -\u003e a/DT (det)\n          -\u003e rice/NN (nmod:of)\n            -\u003e of/IN (case)\n            -\u003e and/CC (cc)\n            -\u003e cans/NNS (conj:and)\n              -\u003e tomatoes/NNS (nmod:of)\n                -\u003e of/IN (case)\n                -\u003e tin/NN (compound)\n          -\u003e cans/NNS (nmod:of)\n    -\u003e had/VBD (advcl)\n",
+			"token": "In,2002,I,hosted,my,first,show,`,Night,of,One,Thousand,and,One,Laughs,with,Free,Food,\u0027\u0027,where,I,had,to,gather,boys,in,my,hostel,before,we,wrote,our,last,exams,,,I,cooked,the,food,because,everybody,was,broke,and,without,food,but,God,so,kind,I,still,had,about,a,bag,of,rice,and,cans,of,tin,tomatoes,.",
+			"lemma": "in,2002,I,host,my,first,show,`,night,of,one,Thousand,and,one,laugh,with,Free,Food,\u0027\u0027,where,I,have,to,gather,boy,in,my,hostel,before,we,write,we,last,exam,,,I,cook,the,food,because,everybody,be,break,and,without,food,but,God,so,kind,I,still,have,about,a,bag,of,rice,and,can,of,tin,tomato,.",
+			"ner": "(TIME,Night|of|One|Thousand|and|One),(DATE,2002),(ORDINAL,first)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 7,
+			"sentence": "The funny thing was I had to write all my jokes on a piece of paper.",
+			"parse_sentence": "(ROOT (S (NP (DT The) (JJ funny) (NN thing)) (VP (VBD was) (SBAR (S (NP (PRP I)) (VP (VBD had) (S (VP (TO to) (VP (VB write) (NP (NP (DT all) (PRP$ my) (NNS jokes)) (PP (IN on) (NP (NP (DT a) (NN piece)) (PP (IN of) (NP (NN paper))))))))))))) (. .)))",
+			"dependency_tree": "-\u003e was/VBD (root)\n  -\u003e thing/NN (nsubj)\n    -\u003e The/DT (det)\n    -\u003e funny/JJ (amod)\n  -\u003e had/VBD (ccomp)\n    -\u003e I/PRP (nsubj)\n    -\u003e write/VB (xcomp)\n      -\u003e to/TO (mark)\n      -\u003e jokes/NNS (dobj)\n        -\u003e all/DT (det:predet)\n        -\u003e my/PRP$ (nmod:poss)\n        -\u003e piece/NN (nmod:on)\n          -\u003e on/IN (case)\n          -\u003e a/DT (det)\n          -\u003e paper/NN (nmod:of)\n            -\u003e of/IN (case)\n",
+			"token": "The,funny,thing,was,I,had,to,write,all,my,jokes,on,a,piece,of,paper,.",
+			"lemma": "the,funny,thing,be,I,have,to,write,all,my,joke,on,a,piece,of,paper,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 8,
+			"sentence": "During my National Youth Service in 2009, out of 23 comedians I was given the best comedian in camp.",
+			"parse_sentence": "(ROOT (S (PP (IN During) (NP (NP (PRP$ my) (NNP National) (NNP Youth) (NNP Service)) (PP (IN in) (NP (CD 2009))))) (, ,) (PP (IN out) (PP (IN of) (NP (CD 23) (NNS comedians)))) (NP (PRP I)) (VP (VBD was) (VP (VBN given) (NP (NP (DT the) (JJS best) (NN comedian)) (PP (IN in) (NP (NN camp)))))) (. .)))",
+			"dependency_tree": "-\u003e given/VBN (root)\n  -\u003e Service/NNP (nmod:during)\n    -\u003e During/IN (case)\n    -\u003e my/PRP$ (nmod:poss)\n    -\u003e National/NNP (compound)\n    -\u003e Youth/NNP (compound)\n    -\u003e 2009/CD (nmod:in)\n      -\u003e in/IN (case)\n  -\u003e comedians/NNS (nmod:out_of)\n    -\u003e out/IN (case)\n      -\u003e of/IN (mwe)\n    -\u003e 23/CD (nummod)\n  -\u003e I/PRP (nsubjpass)\n  -\u003e was/VBD (auxpass)\n  -\u003e comedian/NN (dobj)\n    -\u003e the/DT (det)\n    -\u003e best/JJS (amod)\n    -\u003e camp/NN (nmod:in)\n      -\u003e in/IN (case)\n",
+			"token": "During,my,National,Youth,Service,in,2009,,,out,of,23,comedians,I,was,given,the,best,comedian,in,camp,.",
+			"lemma": "during,my,National,Youth,Service,in,2009,,,out,of,23,comedian,I,be,give,the,best,comedian,in,camp,.",
+			"ner": "(DATE,2009),(NUMBER,23)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 9,
+			"sentence": "I got a job with Radio Broadcasting Corporation of Oyo State during service where I had the first pidgin programme.",
+			"parse_sentence": "(ROOT (S (NP (PRP I)) (VP (VBD got) (NP (NP (DT a) (NN job)) (PP (IN with) (NP (NP (NNP Radio) (NNP Broadcasting) (NNP Corporation)) (PP (IN of) (NP (NNP Oyo) (NNP State))) (PP (IN during) (NP (NP (NN service)) (SBAR (WHADVP (WRB where)) (S (NP (PRP I)) (VP (VBD had) (NP (DT the) (JJ first) (NN pidgin) (NN programme))))))))))) (. .)))",
+			"dependency_tree": "-\u003e got/VBD (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e job/NN (dobj)\n    -\u003e a/DT (det)\n    -\u003e Corporation/NNP (nmod:with)\n      -\u003e with/IN (case)\n      -\u003e Radio/NNP (compound)\n      -\u003e Broadcasting/NNP (compound)\n      -\u003e State/NNP (nmod:of)\n        -\u003e of/IN (case)\n        -\u003e Oyo/NNP (compound)\n      -\u003e service/NN (nmod:during)\n        -\u003e during/IN (case)\n        -\u003e had/VBD (acl:relcl)\n          -\u003e where/WRB (advmod)\n          -\u003e I/PRP (nsubj)\n          -\u003e programme/NN (dobj)\n            -\u003e the/DT (det)\n            -\u003e first/JJ (amod)\n            -\u003e pidgin/NN (compound)\n",
+			"token": "I,got,a,job,with,Radio,Broadcasting,Corporation,of,Oyo,State,during,service,where,I,had,the,first,pidgin,programme,.",
+			"lemma": "I,get,a,job,with,Radio,Broadcasting,Corporation,of,Oyo,State,during,service,where,I,have,the,first,pidgin,programme,.",
+			"ner": "(ORGANIZATION,Radio|Broadcasting|Corporation|of|Oyo|State),(ORDINAL,first)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 10,
+			"sentence": "After service a friend invited me over to come and break into the Abuja market.",
+			"parse_sentence": "(ROOT (S (PP (IN After) (NP (NN service))) (NP (DT a) (NN friend)) (VP (VBD invited) (NP (PRP me)) (PRT (IN over)) (S (VP (TO to) (VP (VB come) (CC and) (VP (VB break) (PP (IN into) (NP (DT the) (NNP Abuja) (NN market)))))))) (. .)))",
+			"dependency_tree": "-\u003e invited/VBD (root)\n  -\u003e service/NN (nmod:after)\n    -\u003e After/IN (case)\n  -\u003e friend/NN (nsubj)\n    -\u003e a/DT (det)\n  -\u003e me/PRP (dobj)\n  -\u003e over/IN (compound:prt)\n  -\u003e come/VB (advcl)\n    -\u003e to/TO (mark)\n    -\u003e and/CC (cc)\n    -\u003e break/VB (conj:and)\n      -\u003e market/NN (nmod:into)\n        -\u003e into/IN (case)\n        -\u003e the/DT (det)\n        -\u003e Abuja/NNP (compound)\n  -\u003e break/VB (advcl)\n",
+			"token": "After,service,a,friend,invited,me,over,to,come,and,break,into,the,Abuja,market,.",
+			"lemma": "after,service,a,friend,invite,I,over,to,come,and,break,into,the,Abuja,market,.",
+			"ner": "(LOCATION,Abuja)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 11,
+			"sentence": "When I came in to Abuja, I begged for shows, I go to shows and introduce myself to comedians, ask to work under them and I remember someone specifically who happens to be from my place.",
+			"parse_sentence": "(ROOT (S (SBAR (WHADVP (WRB When)) (S (NP (PRP I)) (VP (VBD came) (ADVP (IN in)) (PP (TO to) (NP (NNP Abuja)))))) (, ,) (S (NP (PRP I)) (VP (VBD begged) (PP (IN for) (NP (NNS shows))))) (, ,) (S (NP (PRP I)) (VP (VP (VBP go) (PP (TO to) (NP (NNS shows)))) (CC and) (VP (VP (VB introduce) (NP (PRP myself)) (PP (TO to) (NP (NNS comedians)))) (, ,) (VP (VB ask) (S (VP (TO to) (VP (VB work) (PP (IN under) (NP (PRP them)))))))))) (CC and) (S (NP (PRP I)) (VP (VBP remember) (NP (NP (NN someone)) (ADVP (RB specifically)) (SBAR (WHNP (WP who)) (S (VP (VBZ happens) (S (VP (TO to) (VP (VB be) (PP (IN from) (NP (PRP$ my) (NN place)))))))))))) (. .)))",
+			"dependency_tree": "-\u003e begged/VBD (root)\n  -\u003e came/VBD (advcl)\n    -\u003e When/WRB (advmod)\n    -\u003e I/PRP (nsubj)\n    -\u003e in/IN (advmod)\n    -\u003e Abuja/NNP (nmod:to)\n      -\u003e to/TO (case)\n  -\u003e I/PRP (nsubj)\n  -\u003e shows/NNS (nmod:for)\n    -\u003e for/IN (case)\n  -\u003e go/VBP (conj:and)\n    -\u003e I/PRP (nsubj)\n    -\u003e shows/NNS (nmod:to)\n      -\u003e to/TO (case)\n    -\u003e and/CC (cc)\n    -\u003e introduce/VB (conj:and)\n      -\u003e I/PRP (nsubj)\n      -\u003e myself/PRP (dobj)\n      -\u003e comedians/NNS (nmod:to)\n        -\u003e to/TO (case)\n      -\u003e ask/VB (dep)\n        -\u003e work/VB (xcomp)\n          -\u003e to/TO (mark)\n          -\u003e them/PRP (nmod:under)\n            -\u003e under/IN (case)\n  -\u003e introduce/VB (conj:and)\n  -\u003e and/CC (cc)\n  -\u003e remember/VBP (conj:and)\n    -\u003e I/PRP (nsubj)\n    -\u003e someone/NN (dobj)\n      -\u003e specifically/RB (advmod)\n      -\u003e happens/VBZ (acl:relcl)\n        -\u003e who/WP (nsubj)\n        -\u003e place/NN (xcomp)\n          -\u003e to/TO (mark)\n          -\u003e be/VB (cop)\n          -\u003e from/IN (case)\n          -\u003e my/PRP$ (nmod:poss)\n",
+			"token": "When,I,came,in,to,Abuja,,,I,begged,for,shows,,,I,go,to,shows,and,introduce,myself,to,comedians,,,ask,to,work,under,them,and,I,remember,someone,specifically,who,happens,to,be,from,my,place,.",
+			"lemma": "when,I,come,in,to,Abuja,,,I,beg,for,show,,,I,go,to,show,and,introduce,myself,to,comedian,,,ask,to,work,under,they,and,I,remember,someone,specifically,who,happen,to,be,from,my,place,.",
+			"ner": "(LOCATION,Abuja)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 12,
+			"sentence": "He agreed to carry me along but whenever I bump into him at shows, he usually turns his face aside but today, I am a force to reckon with.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP He)) (VP (VBD agreed) (S (VP (TO to) (VP (VB carry) (NP (PRP me)) (PRT (IN along))))))) (CC but) (S (SBAR (WHADVP (WRB whenever)) (S (NP (PRP I)) (VP (VBP bump) (PP (IN into) (NP (PRP him))) (PP (IN at) (NP (NNS shows)))))) (, ,) (NP (PRP he)) (ADVP (RB usually)) (VP (VP (VBZ turns) (NP (PRP$ his) (NN face)) (ADVP (RB aside))) (CC but) (SBAR (S (NP (NN today)) (, ,) (NP (PRP I)) (VP (VBP am) (NP (DT a) (NN force)) (S (VP (TO to) (VP (VB reckon) (PP (IN with)))))))))) (. .)))",
+			"dependency_tree": "-\u003e agreed/VBD (root)\n  -\u003e He/PRP (nsubj)\n  -\u003e carry/VB (xcomp)\n    -\u003e to/TO (mark)\n    -\u003e me/PRP (dobj)\n    -\u003e along/IN (compound:prt)\n  -\u003e but/CC (cc)\n  -\u003e turns/VBZ (conj:but)\n    -\u003e bump/VBP (advcl)\n      -\u003e whenever/WRB (advmod)\n      -\u003e I/PRP (nsubj)\n      -\u003e him/PRP (nmod:into)\n        -\u003e into/IN (case)\n      -\u003e shows/NNS (nmod:at)\n        -\u003e at/IN (case)\n    -\u003e he/PRP (nsubj)\n    -\u003e usually/RB (advmod)\n    -\u003e face/NN (dobj)\n      -\u003e his/PRP$ (nmod:poss)\n    -\u003e aside/RB (advmod)\n    -\u003e but/CC (cc)\n    -\u003e force/NN (ccomp)\n      -\u003e today/NN (nmod:tmod)\n      -\u003e I/PRP (nsubj)\n      -\u003e am/VBP (cop)\n      -\u003e a/DT (det)\n      -\u003e reckon/VB (advcl)\n        -\u003e to/TO (mark)\n        -\u003e with/IN (nmod)\n",
+			"token": "He,agreed,to,carry,me,along,but,whenever,I,bump,into,him,at,shows,,,he,usually,turns,his,face,aside,but,today,,,I,am,a,force,to,reckon,with,.",
+			"lemma": "he,agree,to,carry,I,along,but,whenever,I,bump,into,he,at,show,,,he,usually,turn,he,face,aside,but,today,,,I,be,a,force,to,reckon,with,.",
+			"ner": "(DATE,today)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 13,
+			"sentence": "I was able to meet some persons from church and that was where I was able to carve a niche for myself.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP I)) (VP (VBD was) (ADJP (JJ able) (S (VP (TO to) (VP (VB meet) (NP (DT some) (NNS persons)) (PP (IN from) (NP (NN church))))))))) (CC and) (S (NP (DT that)) (VP (VBD was) (SBAR (WHADVP (WRB where)) (S (NP (PRP I)) (VP (VBD was) (ADJP (JJ able) (S (VP (TO to) (VP (VB carve) (NP (DT a) (NN niche)) (PP (IN for) (NP (PRP myself)))))))))))) (. .)))",
+			"dependency_tree": "-\u003e able/JJ (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e was/VBD (cop)\n  -\u003e meet/VB (xcomp)\n    -\u003e to/TO (mark)\n    -\u003e persons/NNS (dobj)\n      -\u003e some/DT (det)\n    -\u003e church/NN (nmod:from)\n      -\u003e from/IN (case)\n  -\u003e and/CC (cc)\n  -\u003e was/VBD (conj:and)\n    -\u003e that/DT (nsubj)\n    -\u003e able/JJ (advcl)\n      -\u003e where/WRB (advmod)\n      -\u003e I/PRP (nsubj)\n      -\u003e was/VBD (cop)\n      -\u003e carve/VB (xcomp)\n        -\u003e to/TO (mark)\n        -\u003e niche/NN (dobj)\n          -\u003e a/DT (det)\n        -\u003e myself/PRP (nmod:for)\n          -\u003e for/IN (case)\n",
+			"token": "I,was,able,to,meet,some,persons,from,church,and,that,was,where,I,was,able,to,carve,a,niche,for,myself,.",
+			"lemma": "I,be,able,to,meet,some,person,from,church,and,that,be,where,I,be,able,to,carve,a,niche,for,myself,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 14,
+			"sentence": "Did you encounter any brick wall from home?",
+			"parse_sentence": "(ROOT (SQ (VBD Did) (NP (PRP you)) (VP (VB encounter) (NP (NP (DT any) (NN brick) (NN wall)) (PP (IN from) (NP (NN home))))) (. ?)))",
+			"dependency_tree": "-\u003e encounter/VB (root)\n  -\u003e Did/VBD (aux)\n  -\u003e you/PRP (nsubj)\n  -\u003e wall/NN (dobj)\n    -\u003e any/DT (det)\n    -\u003e brick/NN (compound)\n    -\u003e home/NN (nmod:from)\n      -\u003e from/IN (case)\n",
+			"token": "Did,you,encounter,any,brick,wall,from,home,?",
+			"lemma": "do,you,encounter,any,brick,wall,from,home,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 15,
+			"sentence": "My dad is a pastor with Deeper Life Bible Church since when I was four years of age.",
+			"parse_sentence": "(ROOT (S (NP (PRP$ My) (NN dad)) (VP (VBZ is) (NP (NP (DT a) (NN pastor)) (PP (IN with) (NP (NNP Deeper) (NNP Life) (NNP Bible) (NNP Church))) (PP (IN since) (SBAR (WHADVP (WRB when)) (S (NP (PRP I)) (VP (VBD was) (NP (NP (CD four) (NNS years)) (PP (IN of) (NP (NN age)))))))))) (. .)))",
+			"dependency_tree": "-\u003e pastor/NN (root)\n  -\u003e dad/NN (nsubj)\n    -\u003e My/PRP$ (nmod:poss)\n  -\u003e is/VBZ (cop)\n  -\u003e a/DT (det)\n  -\u003e Church/NNP (nmod:with)\n    -\u003e with/IN (case)\n    -\u003e Deeper/NNP (compound)\n    -\u003e Life/NNP (compound)\n    -\u003e Bible/NNP (compound)\n  -\u003e years/NNS (acl)\n    -\u003e since/IN (mark)\n    -\u003e when/WRB (advmod)\n    -\u003e I/PRP (nsubj)\n    -\u003e was/VBD (cop)\n    -\u003e four/CD (nummod)\n    -\u003e age/NN (nmod:of)\n      -\u003e of/IN (case)\n",
+			"token": "My,dad,is,a,pastor,with,Deeper,Life,Bible,Church,since,when,I,was,four,years,of,age,.",
+			"lemma": "my,dad,be,a,pastor,with,Deeper,Life,Bible,Church,since,when,I,be,four,year,of,age,.",
+			"ner": "(DURATION,four|years)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 16,
+			"sentence": "I remember when I told him I wanted to be a comedian, he started giving me King James Version of words like; you want to be a jester, a blasphemer, a tale bearer.",
+			"parse_sentence": "(ROOT (S (S (S (NP (PRP I)) (VP (VBP remember) (SBAR (WHADVP (WRB when)) (S (NP (PRP I)) (VP (VBD told) (NP (PRP him)) (SBAR (S (NP (PRP I)) (VP (VBD wanted) (S (VP (TO to) (VP (VB be) (NP (DT a) (NN comedian))))))))))))) (, ,) (NP (PRP he)) (VP (VBD started) (S (VP (VBG giving) (NP (PRP me)) (NP (NP (NNP King) (NNP James) (NNP Version)) (PP (IN of) (NP (NNS words))) (IN like)))))) (: ;) (S (NP (PRP you)) (VP (VBP want) (S (VP (TO to) (VP (VB be) (NP (NP (DT a) (NN jester)) (, ,) (NP (NP (DT a) (NN blasphemer)) (, ,) (NP (DT a) (NN tale) (NN bearer))))))))) (. .)))",
+			"dependency_tree": "-\u003e started/VBD (root)\n  -\u003e remember/VBP (ccomp)\n    -\u003e I/PRP (nsubj)\n    -\u003e told/VBD (advcl)\n      -\u003e when/WRB (advmod)\n      -\u003e I/PRP (nsubj)\n      -\u003e him/PRP (dobj)\n      -\u003e wanted/VBD (ccomp)\n        -\u003e I/PRP (nsubj)\n        -\u003e comedian/NN (xcomp)\n          -\u003e to/TO (mark)\n          -\u003e be/VB (cop)\n          -\u003e a/DT (det)\n  -\u003e he/PRP (nsubj)\n  -\u003e giving/VBG (xcomp)\n    -\u003e me/PRP (iobj)\n    -\u003e Version/NNP (dobj)\n      -\u003e King/NNP (compound)\n      -\u003e James/NNP (compound)\n      -\u003e words/NNS (nmod:of)\n        -\u003e of/IN (case)\n      -\u003e like/IN (amod)\n  -\u003e want/VBP (parataxis)\n    -\u003e you/PRP (nsubj)\n    -\u003e jester/NN (xcomp)\n      -\u003e to/TO (mark)\n      -\u003e be/VB (cop)\n      -\u003e a/DT (det)\n      -\u003e blasphemer/NN (appos)\n        -\u003e a/DT (det)\n        -\u003e bearer/NN (appos)\n          -\u003e a/DT (det)\n          -\u003e tale/NN (compound)\n",
+			"token": "I,remember,when,I,told,him,I,wanted,to,be,a,comedian,,,he,started,giving,me,King,James,Version,of,words,like,;,you,want,to,be,a,jester,,,a,blasphemer,,,a,tale,bearer,.",
+			"lemma": "I,remember,when,I,tell,he,I,want,to,be,a,comedian,,,he,start,give,I,King,James,Version,of,word,like,;,you,want,to,be,a,jester,,,a,blasphemer,,,a,tale,bearer,.",
+			"ner": "(PERSON,James|Version)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 17,
+			"sentence": "He never understood that you can actually use comedy to preach the gospel.",
+			"parse_sentence": "(ROOT (S (NP (PRP He)) (ADVP (RB never)) (VP (VBD understood) (SBAR (IN that) (S (NP (PRP you)) (VP (MD can) (ADVP (RB actually)) (VP (VB use) (NP (NN comedy)) (S (VP (TO to) (VP (VB preach) (NP (DT the) (NN gospel)))))))))) (. .)))",
+			"dependency_tree": "-\u003e understood/VBD (root)\n  -\u003e He/PRP (nsubj)\n  -\u003e never/RB (neg)\n  -\u003e use/VB (ccomp)\n    -\u003e that/IN (mark)\n    -\u003e you/PRP (nsubj)\n    -\u003e can/MD (aux)\n    -\u003e actually/RB (advmod)\n    -\u003e comedy/NN (dobj)\n    -\u003e preach/VB (advcl)\n      -\u003e to/TO (mark)\n      -\u003e gospel/NN (dobj)\n        -\u003e the/DT (det)\n",
+			"token": "He,never,understood,that,you,can,actually,use,comedy,to,preach,the,gospel,.",
+			"lemma": "he,never,understand,that,you,can,actually,use,comedy,to,preach,the,gospel,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 18,
+			"sentence": "In my style of comedy, I try as much as possible to preach the gospel, I try to invoke confidence in faith into my audience.",
+			"parse_sentence": "(ROOT (S (PP (IN In) (NP (NP (PRP$ my) (NN style)) (PP (IN of) (NP (NN comedy))))) (, ,) (S (NP (PRP I)) (VP (VBP try) (NP (NP (RB as) (JJ much)) (PP (IN as) (ADJP (JJ possible)))) (S (VP (TO to) (VP (VB preach) (NP (DT the) (NN gospel))))))) (, ,) (S (NP (PRP I)) (VP (VBP try) (S (VP (TO to) (VP (VB invoke) (NP (NP (NN confidence)) (PP (IN in) (NP (NP (NN faith)) (PP (IN into) (NP (PRP$ my) (NN audience))))))))))) (. .)))",
+			"dependency_tree": "-\u003e try/VBP (root)\n  -\u003e style/NN (nmod:in)\n    -\u003e In/IN (case)\n    -\u003e my/PRP$ (nmod:poss)\n    -\u003e comedy/NN (nmod:of)\n      -\u003e of/IN (case)\n  -\u003e I/PRP (nsubj)\n  -\u003e much/JJ (dobj)\n    -\u003e as/RB (advmod)\n    -\u003e possible/JJ (acl:as)\n      -\u003e as/IN (case)\n  -\u003e preach/VB (advcl)\n    -\u003e to/TO (mark)\n    -\u003e gospel/NN (dobj)\n      -\u003e the/DT (det)\n  -\u003e try/VBP (parataxis)\n    -\u003e I/PRP (nsubj)\n    -\u003e invoke/VB (xcomp)\n      -\u003e to/TO (mark)\n      -\u003e confidence/NN (dobj)\n        -\u003e faith/NN (nmod:in)\n          -\u003e in/IN (case)\n          -\u003e audience/NN (nmod:into)\n            -\u003e into/IN (case)\n            -\u003e my/PRP$ (nmod:poss)\n",
+			"token": "In,my,style,of,comedy,,,I,try,as,much,as,possible,to,preach,the,gospel,,,I,try,to,invoke,confidence,in,faith,into,my,audience,.",
+			"lemma": "in,my,style,of,comedy,,,I,try,as,much,as,possible,to,preach,the,gospel,,,I,try,to,invoke,confidence,in,faith,into,my,audience,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 19,
+			"sentence": "Asides that, growing up my family will not give you the room to mingle with people or do some certain things they termed as sin like watching of television.",
+			"parse_sentence": "(ROOT (FRAG (NP (NP (NNS Asides)) (SBAR (WHNP (IN that)) (, ,) (S (VP (VBG growing) (PRT (RP up)) (SBAR (S (NP (PRP$ my) (NN family)) (VP (MD will) (RB not) (VP (VB give) (NP (PRP you)) (NP (NP (DT the) (NN room)) (SBAR (S (VP (TO to) (VP (VP (VB mingle) (PP (IN with) (NP (NNS people)))) (CC or) (VP (VB do) (NP (NP (DT some) (JJ certain) (NNS things)) (SBAR (S (NP (PRP they)) (VP (VBD termed) (PP (IN as) (NP (NP (NN sin)) (PP (IN like) (S (VP (VBG watching) (PP (IN of) (NP (NN television)))))))))))))))))))))))))) (. .)))",
+			"dependency_tree": "-\u003e Asides/NNS (root)\n  -\u003e growing/VBG (acl:relcl)\n    -\u003e that/IN (nsubj)\n    -\u003e up/RP (compound:prt)\n    -\u003e give/VB (ccomp)\n      -\u003e family/NN (nsubj)\n        -\u003e my/PRP$ (nmod:poss)\n      -\u003e will/MD (aux)\n      -\u003e not/RB (neg)\n      -\u003e you/PRP (iobj)\n      -\u003e room/NN (dobj)\n        -\u003e the/DT (det)\n        -\u003e mingle/VB (acl)\n          -\u003e to/TO (mark)\n          -\u003e people/NNS (nmod:with)\n            -\u003e with/IN (case)\n          -\u003e or/CC (cc)\n          -\u003e do/VB (conj:or)\n            -\u003e things/NNS (dobj)\n              -\u003e some/DT (det)\n              -\u003e certain/JJ (amod)\n              -\u003e termed/VBD (acl:relcl)\n                -\u003e they/PRP (nsubj)\n                -\u003e sin/NN (nmod:as)\n                  -\u003e as/IN (case)\n                  -\u003e watching/VBG (acl)\n                    -\u003e like/IN (mark)\n                    -\u003e television/NN (nmod:of)\n                      -\u003e of/IN (case)\n        -\u003e do/VB (acl)\n",
+			"token": "Asides,that,,,growing,up,my,family,will,not,give,you,the,room,to,mingle,with,people,or,do,some,certain,things,they,termed,as,sin,like,watching,of,television,.",
+			"lemma": "aside,that,,,grow,up,my,family,will,not,give,you,the,room,to,mingle,with,people,or,do,some,certain,thing,they,term,as,sin,like,watch,of,television,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 20,
+			"sentence": "My first show after service was a big one with council for the regulation of engineering in Nigeria they had an assembly in Kaduna with of my colleagues have plagiarised.",
+			"parse_sentence": "(ROOT (S (NP (NP (PRP$ My) (JJ first) (NN show)) (PP (IN after) (NP (NN service)))) (VP (VBD was) (SBAR (S (NP (NP (DT a) (JJ big) (NN one)) (PP (IN with) (NP (NP (NN council)) (PP (IN for) (NP (NP (DT the) (NN regulation)) (PP (IN of) (NP (NN engineering))) (SBAR (S (PP (IN in) (NP (NNP Nigeria))) (NP (PRP they)) (VP (VBD had) (NP (DT an) (NN assembly)) (PP (IN in) (NP (NP (NNP Kaduna)) (PP (IN with) (PP (IN of) (NP (PRP$ my) (NNS colleagues)))))))))))))) (VP (VBP have) (VP (VBN plagiarised)))))) (. .)))",
+			"dependency_tree": "-\u003e was/VBD (root)\n  -\u003e show/NN (nsubj)\n    -\u003e My/PRP$ (nmod:poss)\n    -\u003e first/JJ (amod)\n    -\u003e service/NN (nmod:after)\n      -\u003e after/IN (case)\n  -\u003e plagiarised/VBN (ccomp)\n    -\u003e one/NN (nsubj)\n      -\u003e a/DT (det)\n      -\u003e big/JJ (amod)\n      -\u003e council/NN (nmod:with)\n        -\u003e with/IN (case)\n        -\u003e regulation/NN (nmod:for)\n          -\u003e for/IN (case)\n          -\u003e the/DT (det)\n          -\u003e engineering/NN (nmod:of)\n            -\u003e of/IN (case)\n          -\u003e had/VBD (acl:relcl)\n            -\u003e Nigeria/NNP (nmod:in)\n              -\u003e in/IN (case)\n            -\u003e they/PRP (nsubj)\n            -\u003e assembly/NN (dobj)\n              -\u003e an/DT (det)\n            -\u003e Kaduna/NNP (nmod:in)\n              -\u003e in/IN (case)\n              -\u003e colleagues/NNS (acl:of)\n                -\u003e with/IN (case)\n                -\u003e of/IN (case)\n                -\u003e my/PRP$ (nmod:poss)\n    -\u003e have/VBP (aux)\n",
+			"token": "My,first,show,after,service,was,a,big,one,with,council,for,the,regulation,of,engineering,in,Nigeria,they,had,an,assembly,in,Kaduna,with,of,my,colleagues,have,plagiarised,.",
+			"lemma": "my,first,show,after,service,be,a,big,one,with,council,for,the,regulation,of,engineering,in,Nigeria,they,have,a,assembly,in,Kaduna,with,of,my,colleague,have,plagiarise,.",
+			"ner": "(LOCATION,Nigeria|Kaduna),(NUMBER,one),(ORDINAL,first)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 21,
+			"sentence": "How does that make you feel?",
+			"parse_sentence": "(ROOT (SBARQ (WHADVP (WRB How)) (SQ (VBZ does) (NP (IN that)) (VP (VBP make) (S (NP (PRP you)) (VP (VB feel))))) (. ?)))",
+			"dependency_tree": "-\u003e make/VBP (root)\n  -\u003e How/WRB (advmod)\n  -\u003e does/VBZ (aux)\n  -\u003e that/IN (nsubj)\n  -\u003e feel/VB (ccomp)\n    -\u003e you/PRP (nsubj)\n",
+			"token": "How,does,that,make,you,feel,?",
+			"lemma": "how,do,that,make,you,feel,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 22,
+			"sentence": "It’s bad, the first one made me cry.",
+			"parse_sentence": "(ROOT (S (NP (PRP It)) (VP (VBZ \u0027s) (ADJP (JJ bad)) (, ,) (S (NP (DT the) (JJ first) (CD one)) (VP (VBD made) (S (NP (PRP me)) (VP (VB cry)))))) (. .)))",
+			"dependency_tree": "-\u003e bad/JJ (root)\n  -\u003e It/PRP (nsubj)\n  -\u003e \u0027s/VBZ (cop)\n  -\u003e made/VBD (ccomp)\n    -\u003e one/CD (nsubj)\n      -\u003e the/DT (det)\n      -\u003e first/JJ (amod)\n    -\u003e cry/VB (ccomp)\n      -\u003e me/PRP (nsubj)\n",
+			"token": "It,\u0027s,bad,,,the,first,one,made,me,cry,.",
+			"lemma": "it,be,bad,,,the,first,one,make,I,cry,.",
+			"ner": "(NUMBER,one),(ORDINAL,first)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 23,
+			"sentence": "In 2009 when we were serving in Oyo state, I called a colleague of mine and started making and arranging rhymes of a song like a pastor.",
+			"parse_sentence": "(ROOT (S (PP (IN In) (NP (NP (CD 2009)) (SBAR (WHADVP (WRB when)) (S (NP (PRP we)) (VP (VBD were) (VP (VBG serving) (PP (IN in) (NP (NNP Oyo) (NN state))))))))) (, ,) (NP (PRP I)) (VP (VP (VBD called) (NP (NP (DT a) (NN colleague)) (PP (IN of) (NP (NN mine))))) (CC and) (VP (VBD started) (S (VP (VBG making) (CC and) (VP (VBG arranging) (NP (NP (NNS rhymes)) (PP (IN of) (NP (NP (DT a) (NN song)) (PP (IN like) (NP (DT a) (NN pastor))))))))))) (. .)))",
+			"dependency_tree": "-\u003e called/VBD (root)\n  -\u003e 2009/CD (nmod:in)\n    -\u003e In/IN (case)\n    -\u003e serving/VBG (acl:relcl)\n      -\u003e when/WRB (advmod)\n      -\u003e we/PRP (nsubj)\n      -\u003e were/VBD (aux)\n      -\u003e state/NN (nmod:in)\n        -\u003e in/IN (case)\n        -\u003e Oyo/NNP (compound)\n  -\u003e I/PRP (nsubj)\n  -\u003e colleague/NN (dobj)\n    -\u003e a/DT (det)\n    -\u003e mine/NN (nmod:of)\n      -\u003e of/IN (case)\n  -\u003e and/CC (cc)\n  -\u003e started/VBD (conj:and)\n    -\u003e I/PRP (nsubj)\n    -\u003e making/VBG (xcomp)\n      -\u003e and/CC (cc)\n      -\u003e arranging/VBG (conj:and)\n        -\u003e rhymes/NNS (dobj)\n          -\u003e song/NN (nmod:of)\n            -\u003e of/IN (case)\n            -\u003e a/DT (det)\n            -\u003e pastor/NN (nmod:like)\n              -\u003e like/IN (case)\n              -\u003e a/DT (det)\n    -\u003e arranging/VBG (xcomp)\n",
+			"token": "In,2009,when,we,were,serving,in,Oyo,state,,,I,called,a,colleague,of,mine,and,started,making,and,arranging,rhymes,of,a,song,like,a,pastor,.",
+			"lemma": "in,2009,when,we,be,serve,in,Oyo,state,,,I,call,a,colleague,of,mine,and,start,make,and,arrange,rhyme,of,a,song,like,a,pastor,.",
+			"ner": "(LOCATION,Oyo),(DATE,2009)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 24,
+			"sentence": "The first time I tried it was in an audition in Oyo, I am suspecting that was how one of our big comedians stole the joke.",
+			"parse_sentence": "(ROOT (S (NP (NP (DT The) (JJ first) (NN time)) (SBAR (S (NP (PRP I)) (VP (VBD tried) (SBAR (S (NP (PRP it)) (VP (VBD was) (PP (IN in) (NP (NP (DT an) (NN audition)) (PP (IN in) (NP (NNP Oyo)))))))))))) (, ,) (NP (PRP I)) (VP (VBP am) (VP (VBG suspecting) (SBAR (S (NP (DT that)) (VP (VBD was) (SBAR (WHADVP (WRB how)) (S (NP (NP (CD one)) (PP (IN of) (NP (PRP$ our) (JJ big) (NNS comedians)))) (VP (VBD stole) (NP (DT the) (NN joke)))))))))) (. .)))",
+			"dependency_tree": "-\u003e suspecting/VBG (root)\n  -\u003e time/NN (nsubj)\n    -\u003e The/DT (det)\n    -\u003e first/JJ (amod)\n    -\u003e tried/VBD (acl:relcl)\n      -\u003e I/PRP (nsubj)\n      -\u003e audition/NN (ccomp)\n        -\u003e it/PRP (nsubj)\n        -\u003e was/VBD (cop)\n        -\u003e in/IN (case)\n        -\u003e an/DT (det)\n        -\u003e Oyo/NNP (nmod:in)\n          -\u003e in/IN (case)\n  -\u003e I/PRP (nsubj)\n  -\u003e am/VBP (aux)\n  -\u003e was/VBD (ccomp)\n    -\u003e that/DT (nsubj)\n    -\u003e stole/VBD (ccomp)\n      -\u003e how/WRB (advmod)\n      -\u003e one/CD (nsubj)\n        -\u003e comedians/NNS (nmod:of)\n          -\u003e of/IN (case)\n          -\u003e our/PRP$ (nmod:poss)\n          -\u003e big/JJ (amod)\n      -\u003e joke/NN (dobj)\n        -\u003e the/DT (det)\n",
+			"token": "The,first,time,I,tried,it,was,in,an,audition,in,Oyo,,,I,am,suspecting,that,was,how,one,of,our,big,comedians,stole,the,joke,.",
+			"lemma": "the,first,time,I,try,it,be,in,a,audition,in,Oyo,,,I,be,suspect,that,be,how,one,of,we,big,comedian,steal,the,joke,.",
+			"ner": "(LOCATION,Oyo),(NUMBER,one),(ORDINAL,first)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 25,
+			"sentence": "I came for an auditioning here in Abuja and with that idea of an original joke I dropped the joke only for the judges to be staring at me.",
+			"parse_sentence": "(ROOT (S (NP (PRP I)) (VP (VBD came) (PP (IN for) (CONJP (NP (DT an) (S (VP (VBG auditioning) (ADVP (RB here)) (PP (IN in) (NP (NNP Abuja))))) (CC and)) (IN with))) (NP (NP (DT that) (NN idea)) (PP (IN of) (NP (NP (DT an) (JJ original) (NN joke)) (SBAR (S (NP (PRP I)) (VP (VBD dropped) (NP (DT the) (NN joke)) (SBAR (ADVP (RB only)) (IN for) (S (NP (DT the) (NNS judges)) (VP (TO to) (VP (VB be) (VP (VBG staring) (PP (IN at) (NP (PRP me))))))))))))))) (. .)))",
+			"dependency_tree": "-\u003e came/VBD (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e with/IN (dep)\n    -\u003e for/IN (case)\n    -\u003e an/DT (dep)\n      -\u003e auditioning/VBG (dep)\n        -\u003e here/RB (advmod)\n        -\u003e Abuja/NNP (nmod:in)\n          -\u003e in/IN (case)\n      -\u003e and/CC (cc)\n  -\u003e idea/NN (dobj)\n    -\u003e that/DT (det)\n    -\u003e joke/NN (nmod:of)\n      -\u003e of/IN (case)\n      -\u003e an/DT (det)\n      -\u003e original/JJ (amod)\n      -\u003e dropped/VBD (acl:relcl)\n        -\u003e I/PRP (nsubj)\n        -\u003e joke/NN (dobj)\n          -\u003e the/DT (det)\n        -\u003e staring/VBG (advcl)\n          -\u003e only/RB (advmod)\n          -\u003e for/IN (mark)\n          -\u003e judges/NNS (nsubj)\n            -\u003e the/DT (det)\n          -\u003e to/TO (mark)\n          -\u003e be/VB (aux)\n          -\u003e me/PRP (nmod:at)\n            -\u003e at/IN (case)\n",
+			"token": "I,came,for,an,auditioning,here,in,Abuja,and,with,that,idea,of,an,original,joke,I,dropped,the,joke,only,for,the,judges,to,be,staring,at,me,.",
+			"lemma": "I,come,for,a,audition,here,in,Abuja,and,with,that,idea,of,a,original,joke,I,drop,the,joke,only,for,the,judge,to,be,stare,at,I,.",
+			"ner": "(LOCATION,Abuja)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 26,
+			"sentence": "A week later, I heard the person on a CD and when I called that colleague of mine and played it for him he was shocked because they were the ones arranging the songs for me that day.",
+			"parse_sentence": "(ROOT (S (ADVP (NP (DT A) (NN week)) (RB later)) (, ,) (NP (PRP I)) (VP (VP (VBD heard) (NP (DT the) (NN person)) (PP (IN on) (NP (DT a) (NN CD)))) (CC and) (SBAR (WHADVP (WRB when)) (S (NP (PRP I)) (VP (VP (VBD called) (S (NP (NP (DT that) (NN colleague)) (PP (IN of) (NP (NN mine)))))) (CC and) (VP (VBD played) (NP (PRP it)) (PP (IN for) (S (NP (PRP him)) (NP (PRP he)) (VP (VBD was) (VP (VBN shocked) (SBAR (IN because) (S (NP (PRP they)) (VP (VBD were) (NP (NP (DT the) (NNS ones)) (VP (VBG arranging) (NP (DT the) (NNS songs)) (PP (IN for) (NP (PRP me))) (NP (DT that) (NN day)))))))))))))))) (. .)))",
+			"dependency_tree": "-\u003e heard/VBD (root)\n  -\u003e later/RB (advmod)\n    -\u003e week/NN (nmod:npmod)\n      -\u003e A/DT (det)\n  -\u003e I/PRP (nsubj)\n  -\u003e person/NN (dobj)\n    -\u003e the/DT (det)\n  -\u003e CD/NN (nmod:on)\n    -\u003e on/IN (case)\n    -\u003e a/DT (det)\n  -\u003e and/CC (cc)\n  -\u003e called/VBD (advcl)\n    -\u003e when/WRB (advmod)\n    -\u003e I/PRP (nsubj)\n    -\u003e colleague/NN (xcomp)\n      -\u003e that/DT (det)\n      -\u003e mine/NN (nmod:of)\n        -\u003e of/IN (case)\n    -\u003e and/CC (cc)\n    -\u003e played/VBD (conj:and)\n      -\u003e I/PRP (nsubj)\n      -\u003e it/PRP (dobj)\n      -\u003e shocked/VBN (advcl)\n        -\u003e for/IN (mark)\n        -\u003e him/PRP (nsubjpass)\n        -\u003e he/PRP (nsubjpass)\n        -\u003e was/VBD (auxpass)\n        -\u003e ones/NNS (advcl)\n          -\u003e because/IN (mark)\n          -\u003e they/PRP (nsubj)\n          -\u003e were/VBD (cop)\n          -\u003e the/DT (det)\n          -\u003e arranging/VBG (acl)\n            -\u003e songs/NNS (dobj)\n              -\u003e the/DT (det)\n            -\u003e me/PRP (nmod:for)\n              -\u003e for/IN (case)\n            -\u003e day/NN (nmod:tmod)\n              -\u003e that/DT (det)\n  -\u003e played/VBD (advcl)\n",
+			"token": "A,week,later,,,I,heard,the,person,on,a,CD,and,when,I,called,that,colleague,of,mine,and,played,it,for,him,he,was,shocked,because,they,were,the,ones,arranging,the,songs,for,me,that,day,.",
+			"lemma": "a,week,later,,,I,hear,the,person,on,a,cd,and,when,I,call,that,colleague,of,mine,and,play,it,for,he,he,be,shock,because,they,be,the,one,arrange,the,song,for,I,that,day,.",
+			"ner": "(DURATION,day),(DATE,A|week|later)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 27,
+			"sentence": "I feel bad and that is why the body of comedians especially myself, keep hammering on plagiarism, everybody get up do your homework.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP I)) (VP (VBP feel) (ADJP (JJ bad)))) (CC and) (S (NP (DT that)) (VP (VBZ is) (SBAR (WHADVP (WRB why)) (S (NP (NP (DT the) (NN body)) (PP (IN of) (NP (NNS comedians))) (PP (RB especially) (NP (PRP myself))) (PRN (, ,) (S (VP (VB keep) (S (VP (VBG hammering) (PP (IN on) (NP (NN plagiarism))))))) (, ,)) (SBAR (S (NP (NN everybody)) (VP (VB get) (ADVP (RB up)) (VP (VB do) (NP (PRP$ your) (NN homework))))))))))) (. .)))",
+			"dependency_tree": "-\u003e feel/VBP (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e bad/JJ (xcomp)\n  -\u003e and/CC (cc)\n  -\u003e is/VBZ (conj:and)\n    -\u003e that/DT (nsubj)\n    -\u003e body/NN (advcl)\n      -\u003e why/WRB (advmod)\n      -\u003e the/DT (det)\n      -\u003e comedians/NNS (nmod:of)\n        -\u003e of/IN (case)\n      -\u003e myself/PRP (nmod)\n        -\u003e especially/RB (advmod)\n      -\u003e keep/VB (dep)\n        -\u003e hammering/VBG (xcomp)\n          -\u003e plagiarism/NN (nmod:on)\n            -\u003e on/IN (case)\n      -\u003e do/VB (acl:relcl)\n        -\u003e everybody/NN (nsubj)\n        -\u003e get/VB (aux)\n        -\u003e up/RB (advmod)\n        -\u003e homework/NN (dobj)\n          -\u003e your/PRP$ (nmod:poss)\n",
+			"token": "I,feel,bad,and,that,is,why,the,body,of,comedians,especially,myself,,,keep,hammering,on,plagiarism,,,everybody,get,up,do,your,homework,.",
+			"lemma": "I,feel,bad,and,that,be,why,the,body,of,comedian,especially,myself,,,keep,hammer,on,plagiarism,,,everybody,get,up,do,you,homework,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 28,
+			"sentence": "Abuja boys are doing well, they are even waxing strong, day by day they bring in new materials.",
+			"parse_sentence": "(ROOT (S (S (S (NP (NNP Abuja) (NNS boys)) (VP (VBP are) (VP (VBG doing) (ADVP (RB well))))) (, ,) (NP (PRP they)) (VP (VBP are) (ADVP (RB even)) (VP (VBG waxing) (ADVP (JJ strong))))) (, ,) (S (NP (NN day)) (PP (IN by) (NP (NP (NN day)) (SBAR (S (NP (PRP they)) (VP (VBP bring) (PRT (RP in)) (NP (JJ new) (NNS materials)))))))) (. .)))",
+			"dependency_tree": "-\u003e waxing/VBG (root)\n  -\u003e doing/VBG (ccomp)\n    -\u003e boys/NNS (nsubj)\n      -\u003e Abuja/NNP (compound)\n    -\u003e are/VBP (aux)\n    -\u003e well/RB (advmod)\n  -\u003e they/PRP (nsubj)\n  -\u003e are/VBP (aux)\n  -\u003e even/RB (advmod)\n  -\u003e strong/JJ (advmod)\n  -\u003e day/NN (parataxis)\n    -\u003e day/NN (dep)\n      -\u003e by/IN (case)\n      -\u003e bring/VBP (acl:relcl)\n        -\u003e they/PRP (nsubj)\n        -\u003e in/RP (compound:prt)\n        -\u003e materials/NNS (dobj)\n          -\u003e new/JJ (amod)\n",
+			"token": "Abuja,boys,are,doing,well,,,they,are,even,waxing,strong,,,day,by,day,they,bring,in,new,materials,.",
+			"lemma": "Abuja,boy,be,do,well,,,they,be,even,wax,strong,,,day,by,day,they,bring,in,new,material,.",
+			"ner": "(DURATION,day|day),(LOCATION,Abuja)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 29,
+			"sentence": "I have a colleague who thinks per second and when you have such a person around, you need to awaken your thinking tank.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP I)) (VP (VBP have) (NP (NP (DT a) (NN colleague)) (SBAR (WHNP (WP who)) (S (VP (VBZ thinks) (PP (IN per) (NP (JJ second))))))))) (CC and) (S (SBAR (WHADVP (WRB when)) (S (NP (PRP you)) (VP (VBP have) (NP (NP (JJ such) (DT a) (NN person)) (ADVP (RB around)))))) (, ,) (NP (PRP you)) (VP (VBP need) (S (VP (TO to) (VP (VB awaken) (NP (PRP$ your) (NN thinking) (NN tank))))))) (. .)))",
+			"dependency_tree": "-\u003e have/VBP (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e colleague/NN (dobj)\n    -\u003e a/DT (det)\n    -\u003e thinks/VBZ (acl:relcl)\n      -\u003e who/WP (nsubj)\n      -\u003e second/JJ (nmod:per)\n        -\u003e per/IN (case)\n  -\u003e and/CC (cc)\n  -\u003e need/VBP (conj:and)\n    -\u003e have/VBP (advcl)\n      -\u003e when/WRB (advmod)\n      -\u003e you/PRP (nsubj)\n      -\u003e person/NN (dobj)\n        -\u003e such/JJ (amod)\n        -\u003e a/DT (det)\n        -\u003e around/RB (advmod)\n    -\u003e you/PRP (nsubj)\n    -\u003e awaken/VB (xcomp)\n      -\u003e to/TO (mark)\n      -\u003e tank/NN (dobj)\n        -\u003e your/PRP$ (nmod:poss)\n        -\u003e thinking/NN (compound)\n",
+			"token": "I,have,a,colleague,who,thinks,per,second,and,when,you,have,such,a,person,around,,,you,need,to,awaken,your,thinking,tank,.",
+			"lemma": "I,have,a,colleague,who,think,per,second,and,when,you,have,such,a,person,around,,,you,need,to,awaken,you,thinking,tank,.",
+			"ner": "(ORDINAL,second)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 30,
+			"sentence": "How exactly is the association fighting this scourge?",
+			"parse_sentence": "(ROOT (SBARQ (WHADJP (WRB How) (RB exactly)) (SQ (VBZ is) (NP (NP (DT the) (NN association)) (VP (VBG fighting) (NP (DT this) (NN scourge))))) (. ?)))",
+			"dependency_tree": "-\u003e is/VBZ (root)\n  -\u003e exactly/RB (dep)\n    -\u003e How/WRB (advmod)\n  -\u003e association/NN (nsubj)\n    -\u003e the/DT (det)\n    -\u003e fighting/VBG (acl)\n      -\u003e scourge/NN (dobj)\n        -\u003e this/DT (det)\n",
+			"token": "How,exactly,is,the,association,fighting,this,scourge,?",
+			"lemma": "how,exactly,be,the,association,fight,this,scourge,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 31,
+			"sentence": "Months ago during a show, the first guy signed out with a particular joke, the next person started with the joke the first person signed out with and the third person also signed in with the same joke.",
+			"parse_sentence": "(ROOT (NP (NP (NNS Months)) (IN ago) (PP (IN during) (NP (NP (DT a) (NN show)) (, ,) (NP (NP (DT the) (JJ first) (NN guy)) (VP (VBN signed) (PRT (RP out)) (PP (IN with) (NP (DT a) (JJ particular) (NN joke))))) (, ,) (S (NP (DT the) (JJ next) (NN person)) (VP (VBN started) (PP (IN with) (NP (DT the) (NN joke))) (NP (NP (DT the) (JJ first) (NN person)) (VP (VBN signed) (PRT (RP out)) (PP (IN with) (S (CC and) (NP (DT the) (JJ third) (NN person)) (ADVP (RB also)) (VP (VBD signed) (PRT (IN in)) (PP (IN with) (NP (DT the) (JJ same) (NN joke)))))))))))) (. .)))",
+			"dependency_tree": "-\u003e Months/NNS (root)\n  -\u003e ago/IN (amod)\n  -\u003e show/NN (nmod:during)\n    -\u003e during/IN (case)\n    -\u003e a/DT (det)\n    -\u003e guy/NN (appos)\n      -\u003e the/DT (det)\n      -\u003e first/JJ (amod)\n      -\u003e signed/VBN (acl)\n        -\u003e out/RP (compound:prt)\n        -\u003e joke/NN (nmod:with)\n          -\u003e with/IN (case)\n          -\u003e a/DT (det)\n          -\u003e particular/JJ (amod)\n    -\u003e started/VBN (dep)\n      -\u003e person/NN (nsubj)\n        -\u003e the/DT (det)\n        -\u003e next/JJ (amod)\n      -\u003e joke/NN (nmod:with)\n        -\u003e with/IN (case)\n        -\u003e the/DT (det)\n      -\u003e person/NN (dobj)\n        -\u003e the/DT (det)\n        -\u003e first/JJ (amod)\n        -\u003e signed/VBN (acl)\n          -\u003e out/RP (compound:prt)\n          -\u003e signed/VBD (advcl)\n            -\u003e with/IN (mark)\n            -\u003e and/CC (cc)\n            -\u003e person/NN (nsubj)\n              -\u003e the/DT (det)\n              -\u003e third/JJ (amod)\n            -\u003e also/RB (advmod)\n            -\u003e in/IN (compound:prt)\n            -\u003e joke/NN (nmod:with)\n              -\u003e with/IN (case)\n              -\u003e the/DT (det)\n              -\u003e same/JJ (amod)\n",
+			"token": "Months,ago,during,a,show,,,the,first,guy,signed,out,with,a,particular,joke,,,the,next,person,started,with,the,joke,the,first,person,signed,out,with,and,the,third,person,also,signed,in,with,the,same,joke,.",
+			"lemma": "month,ago,during,a,show,,,the,first,guy,sign,out,with,a,particular,joke,,,the,next,person,start,with,the,joke,the,first,person,sign,out,with,and,the,third,person,also,sign,in,with,the,same,joke,.",
+			"ner": "(DATE,Months|ago),(ORDINAL,first|first|third)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 32,
+			"sentence": "It makes us feel as though we in Abuja are not working.",
+			"parse_sentence": "(ROOT (S (NP (PRP It)) (VP (VBZ makes) (S (NP (PRP us)) (VP (VB feel) (SBAR (IN as) (IN though) (S (NP (NP (PRP we)) (PP (IN in) (NP (NNP Abuja)))) (VP (VBP are) (RB not) (VP (VBG working)))))))) (. .)))",
+			"dependency_tree": "-\u003e makes/VBZ (root)\n  -\u003e It/PRP (nsubj)\n  -\u003e feel/VB (ccomp)\n    -\u003e us/PRP (nsubj)\n    -\u003e working/VBG (advcl)\n      -\u003e as/IN (mark)\n      -\u003e though/IN (mark)\n      -\u003e we/PRP (nsubj)\n        -\u003e Abuja/NNP (nmod:in)\n          -\u003e in/IN (case)\n      -\u003e are/VBP (aux)\n      -\u003e not/RB (neg)\n",
+			"token": "It,makes,us,feel,as,though,we,in,Abuja,are,not,working,.",
+			"lemma": "it,make,we,feel,as,though,we,in,Abuja,be,not,work,.",
+			"ner": "(LOCATION,Abuja)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 33,
+			"sentence": "We came out mad and penciled some jokes down never to be cracked again.",
+			"parse_sentence": "(ROOT (S (NP (PRP We)) (VP (VP (VBD came) (PRT (RP out)) (ADJP (JJ mad))) (CC and) (VP (VBD penciled) (NP (DT some) (NNS jokes)) (ADVP (IN down) (S (ADVP (RB never)) (VP (TO to) (VP (VB be) (VP (VBN cracked) (ADVP (RB again))))))))) (. .)))",
+			"dependency_tree": "-\u003e came/VBD (root)\n  -\u003e We/PRP (nsubj)\n  -\u003e out/RP (compound:prt)\n  -\u003e mad/JJ (xcomp)\n  -\u003e and/CC (cc)\n  -\u003e penciled/VBD (conj:and)\n    -\u003e We/PRP (nsubj)\n    -\u003e jokes/NNS (dobj)\n      -\u003e some/DT (det)\n    -\u003e down/IN (advmod)\n      -\u003e cracked/VBN (dep)\n        -\u003e never/RB (neg)\n        -\u003e to/TO (mark)\n        -\u003e be/VB (auxpass)\n        -\u003e again/RB (advmod)\n",
+			"token": "We,came,out,mad,and,penciled,some,jokes,down,never,to,be,cracked,again,.",
+			"lemma": "we,come,out,mad,and,pencil,some,joke,down,never,to,be,crack,again,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 34,
+			"sentence": "That has brought some sort of sanity and enforced hard work.",
+			"parse_sentence": "(ROOT (S (NP (DT That)) (VP (VBZ has) (VP (VP (VBN brought) (NP (NP (DT some) (NN sort)) (PP (IN of) (NP (NN sanity))))) (CC and) (VP (VBD enforced) (NP (JJ hard) (NN work))))) (. .)))",
+			"dependency_tree": "-\u003e brought/VBN (root)\n  -\u003e That/DT (nsubj)\n  -\u003e has/VBZ (aux)\n  -\u003e sort/NN (dobj)\n    -\u003e some/DT (det)\n    -\u003e sanity/NN (nmod:of)\n      -\u003e of/IN (case)\n  -\u003e and/CC (cc)\n  -\u003e enforced/VBD (conj:and)\n    -\u003e That/DT (nsubj)\n    -\u003e work/NN (dobj)\n      -\u003e hard/JJ (amod)\n",
+			"token": "That,has,brought,some,sort,of,sanity,and,enforced,hard,work,.",
+			"lemma": "that,have,bring,some,sort,of,sanity,and,enforce,hard,work,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 35,
+			"sentence": "The union is a very wonderful body, we have this harmony and we get sharp response from our members.",
+			"parse_sentence": "(ROOT (S (S (NP (DT The) (NN union)) (VP (VBZ is) (NP (DT a) (ADJP (RB very) (JJ wonderful)) (NN body)))) (, ,) (S (NP (PRP we)) (VP (VBP have) (NP (DT this) (NN harmony)))) (CC and) (S (NP (PRP we)) (VP (VBP get) (NP (JJ sharp) (NN response)) (PP (IN from) (NP (PRP$ our) (NNS members))))) (. .)))",
+			"dependency_tree": "-\u003e body/NN (root)\n  -\u003e union/NN (nsubj)\n    -\u003e The/DT (det)\n  -\u003e is/VBZ (cop)\n  -\u003e a/DT (det)\n  -\u003e wonderful/JJ (amod)\n    -\u003e very/RB (advmod)\n  -\u003e have/VBP (conj:and)\n    -\u003e we/PRP (nsubj)\n    -\u003e harmony/NN (dobj)\n      -\u003e this/DT (det)\n  -\u003e and/CC (cc)\n  -\u003e get/VBP (conj:and)\n    -\u003e we/PRP (nsubj)\n    -\u003e response/NN (dobj)\n      -\u003e sharp/JJ (amod)\n    -\u003e members/NNS (nmod:from)\n      -\u003e from/IN (case)\n      -\u003e our/PRP$ (nmod:poss)\n",
+			"token": "The,union,is,a,very,wonderful,body,,,we,have,this,harmony,and,we,get,sharp,response,from,our,members,.",
+			"lemma": "the,union,be,a,very,wonderful,body,,,we,have,this,harmony,and,we,get,sharp,response,from,we,member,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 36,
+			"sentence": "We are trying to see how we can push at least one Abuja comedian to the national sphere.",
+			"parse_sentence": "(ROOT (S (NP (PRP We)) (VP (VBP are) (VP (VBG trying) (S (VP (TO to) (VP (VB see) (SBAR (WHADVP (WRB how)) (S (NP (PRP we)) (VP (MD can) (VP (VB push) (NP (QP (IN at) (JJS least) (CD one)) (NNP Abuja) (NN comedian)) (PP (TO to) (NP (DT the) (JJ national) (NN sphere)))))))))))) (. .)))",
+			"dependency_tree": "-\u003e trying/VBG (root)\n  -\u003e We/PRP (nsubj)\n  -\u003e are/VBP (aux)\n  -\u003e see/VB (xcomp)\n    -\u003e to/TO (mark)\n    -\u003e push/VB (ccomp)\n      -\u003e how/WRB (advmod)\n      -\u003e we/PRP (nsubj)\n      -\u003e can/MD (aux)\n      -\u003e comedian/NN (dobj)\n        -\u003e one/CD (nummod)\n          -\u003e least/JJS (nmod:npmod)\n            -\u003e at/IN (case)\n        -\u003e Abuja/NNP (compound)\n      -\u003e sphere/NN (nmod:to)\n        -\u003e to/TO (case)\n        -\u003e the/DT (det)\n        -\u003e national/JJ (amod)\n",
+			"token": "We,are,trying,to,see,how,we,can,push,at,least,one,Abuja,comedian,to,the,national,sphere,.",
+			"lemma": "we,be,try,to,see,how,we,can,push,at,least,one,Abuja,comedian,to,the,national,sphere,.",
+			"ner": "(LOCATION,Abuja),(NUMBER,one)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 37,
+			"sentence": "We have Chucks d General and Ambassador Wahala apart from Shortcut, Ghana Must Go, Onome and others.",
+			"parse_sentence": "(ROOT (UCP (S (S (NP (PRP We)) (VP (VBP have) (NP (NP (NNP Chucks) (NN d) (NNP General)) (CC and) (NP (NNP Ambassador) (NNP Wahala))) (ADVP (RB apart)) (PP (IN from) (NP (NN Shortcut))))) (, ,) (NP (NNP Ghana)) (VP (MD Must) (VP (VB Go)))) (, ,) (NP (NNP Onome) (CC and) (NP (NNS others))) (. .)))",
+			"dependency_tree": "-\u003e Go/VB (root)\n  -\u003e have/VBP (ccomp)\n    -\u003e We/PRP (nsubj)\n    -\u003e General/NNP (dobj)\n      -\u003e Chucks/NNP (compound)\n      -\u003e d/NN (compound)\n      -\u003e and/CC (cc)\n      -\u003e Wahala/NNP (conj:and)\n        -\u003e Ambassador/NNP (compound)\n    -\u003e Wahala/NNP (dobj)\n    -\u003e Shortcut/NN (nmod:apart_from)\n      -\u003e apart/RB (case)\n        -\u003e from/IN (mwe)\n  -\u003e Ghana/NNP (nsubj)\n  -\u003e Must/MD (aux)\n  -\u003e Onome/NNP (dep)\n    -\u003e and/CC (cc)\n    -\u003e others/NNS (conj:and)\n  -\u003e others/NNS (dep)\n",
+			"token": "We,have,Chucks,d,General,and,Ambassador,Wahala,apart,from,Shortcut,,,Ghana,Must,Go,,,Onome,and,others,.",
+			"lemma": "we,have,Chucks,d,General,and,Ambassador,Wahala,apart,from,shortcut,,,Ghana,must,go,,,Onome,and,other,.",
+			"ner": "(PERSON,Wahala),(LOCATION,Ghana)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 38,
+			"sentence": "We are diversifying and that is a good thing.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP We)) (VP (VBP are) (VP (VBG diversifying)))) (CC and) (S (NP (DT that)) (VP (VBZ is) (NP (DT a) (JJ good) (NN thing)))) (. .)))",
+			"dependency_tree": "-\u003e diversifying/VBG (root)\n  -\u003e We/PRP (nsubj)\n  -\u003e are/VBP (aux)\n  -\u003e and/CC (cc)\n  -\u003e thing/NN (conj:and)\n    -\u003e that/DT (nsubj)\n    -\u003e is/VBZ (cop)\n    -\u003e a/DT (det)\n    -\u003e good/JJ (amod)\n",
+			"token": "We,are,diversifying,and,that,is,a,good,thing,.",
+			"lemma": "we,be,diversify,and,that,be,a,good,thing,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 39,
+			"sentence": "What advice do you have for comedians?",
+			"parse_sentence": "(ROOT (SBARQ (WHNP (WDT What) (NN advice)) (SQ (VBP do) (NP (PRP you)) (VP (VB have) (PP (IN for) (NP (NNS comedians))))) (. ?)))",
+			"dependency_tree": "-\u003e have/VB (root)\n  -\u003e advice/NN (dobj)\n    -\u003e What/WDT (det)\n  -\u003e do/VBP (aux)\n  -\u003e you/PRP (nsubj)\n  -\u003e comedians/NNS (nmod:for)\n    -\u003e for/IN (case)\n",
+			"token": "What,advice,do,you,have,for,comedians,?",
+			"lemma": "what,advice,do,you,have,for,comedian,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 40,
+			"sentence": "Be at your best, you cannot be someone else, do your research, when you come as a body locate people that can lead you, always look for something to lean on that will make you grow, you must look for a mentor and at the end of the day you will be a mentor.",
+			"parse_sentence": "(ROOT (S (S (S (VP (VB Be) (PP (IN at) (NP (PRP$ your) (JJS best))))) (, ,) (S (NP (PRP you)) (VP (MD can) (RB not) (VP (VP (VB be) (NP (NP (NN someone)) (ADJP (RB else)))) (, ,) (VP (VB do) (NP (PRP$ your) (NN research)) (, ,) (SBAR (WHADVP (WRB when)) (S (NP (PRP you)) (VP (VBP come) (SBAR (IN as) (S (NP (DT a) (NN body)) (VP (VB locate) (NP (NP (NNS people)) (SBAR (WHNP (WDT that)) (S (VP (MD can) (VP (VB lead) (NP (PRP you)) (, ,) (SBAR (S (S (ADVP (RB always)) (VP (VB look) (PP (IN for) (NP (NP (NN something)) (SBAR (S (VP (TO to) (VP (VB lean) (PP (IN on) (NP (DT that))))))))))) (VP (MD will) (VP (VB make) (S (NP (PRP you)) (VP (VB grow))))))))))))))))))))))) (, ,) (NP (PRP you)) (VP (MD must) (VP (VB look) (PP (IN for) (NP (NP (DT a) (NN mentor)) (CC and) (PP (IN at) (NP (NP (DT the) (NN end)) (PP (IN of) (NP (NP (DT the) (NN day)) (SBAR (S (NP (PRP you)) (VP (MD will) (VP (VB be) (NP (DT a) (NN mentor)))))))))))))) (. .)))",
+			"dependency_tree": "-\u003e look/VB (root)\n  -\u003e best/JJS (ccomp)\n    -\u003e Be/VB (cop)\n    -\u003e at/IN (case)\n    -\u003e your/PRP$ (nmod:poss)\n    -\u003e someone/NN (parataxis)\n      -\u003e you/PRP (nsubj)\n      -\u003e can/MD (aux)\n      -\u003e not/RB (neg)\n      -\u003e be/VB (cop)\n      -\u003e else/RB (amod)\n      -\u003e do/VB (dep)\n        -\u003e research/NN (dobj)\n          -\u003e your/PRP$ (nmod:poss)\n        -\u003e come/VBP (advcl)\n          -\u003e when/WRB (advmod)\n          -\u003e you/PRP (nsubj)\n          -\u003e locate/VB (advcl)\n            -\u003e as/IN (mark)\n            -\u003e body/NN (nsubj)\n              -\u003e a/DT (det)\n            -\u003e people/NNS (dobj)\n              -\u003e lead/VB (acl:relcl)\n                -\u003e that/WDT (nsubj)\n                -\u003e can/MD (aux)\n                -\u003e you/PRP (dobj)\n                -\u003e make/VB (dep)\n                  -\u003e look/VB (csubj)\n                    -\u003e always/RB (advmod)\n                    -\u003e something/NN (nmod:for)\n                      -\u003e for/IN (case)\n                      -\u003e lean/VB (acl)\n                        -\u003e to/TO (mark)\n                        -\u003e that/DT (nmod:on)\n                          -\u003e on/IN (case)\n                  -\u003e will/MD (aux)\n                  -\u003e grow/VB (ccomp)\n                    -\u003e you/PRP (nsubj)\n  -\u003e you/PRP (nsubj)\n  -\u003e must/MD (aux)\n  -\u003e look/VB\u0027 (conj:and)\n    -\u003e you/PRP (nsubj)\n    -\u003e end/NN (nmod:at)\n      -\u003e at/IN (case)\n      -\u003e the/DT (det)\n      -\u003e day/NN (nmod:of)\n        -\u003e of/IN (case)\n        -\u003e the/DT (det)\n        -\u003e mentor/NN (acl:relcl)\n          -\u003e you/PRP (nsubj)\n          -\u003e will/MD (aux)\n          -\u003e be/VB (cop)\n          -\u003e a/DT (det)\n  -\u003e mentor/NN (nmod:for)\n    -\u003e for/IN (case)\n    -\u003e a/DT (det)\n  -\u003e and/CC (cc)\n",
+			"token": "Be,at,your,best,,,you,can,not,be,someone,else,,,do,your,research,,,when,you,come,as,a,body,locate,people,that,can,lead,you,,,always,look,for,something,to,lean,on,that,will,make,you,grow,,,you,must,look,for,a,mentor,and,at,the,end,of,the,day,you,will,be,a,mentor,.",
+			"lemma": "be,at,you,best,,,you,can,not,be,someone,else,,,do,you,research,,,when,you,come,as,a,body,locate,people,that,can,lead,you,,,always,look,for,something,to,lean,on,that,will,make,you,grow,,,you,must,look,for,a,mentor,and,at,the,end,of,the,day,you,will,be,a,mentor,.",
+			"ner": "(DATE,the|end|of|the|day)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 41,
+			"sentence": "Who are your mentors?",
+			"parse_sentence": "(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBP are) (NP (PRP$ your) (NNS mentors))) (. ?)))",
+			"dependency_tree": "-\u003e Who/WP (root)\n  -\u003e are/VBP (cop)\n  -\u003e mentors/NNS (nsubj)\n    -\u003e your/PRP$ (nmod:poss)\n",
+			"token": "Who,are,your,mentors,?",
+			"lemma": "who,be,you,mentor,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 42,
+			"sentence": "Ali Baba.",
+			"parse_sentence": "(ROOT (NP (NNP Ali) (NNP Baba) (. .)))",
+			"dependency_tree": "-\u003e Baba/NNP (root)\n  -\u003e Ali/NNP (compound)\n",
+			"token": "Ali,Baba,.",
+			"lemma": "Ali,Baba,.",
+			"ner": "(PERSON,Ali|Baba)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 43,
+			"sentence": "Gandoki because he is very creative.",
+			"parse_sentence": "(ROOT (FRAG (ADJP (NNP Gandoki)) (SBAR (IN because) (S (NP (PRP he)) (VP (VBZ is) (ADJP (RB very) (JJ creative))))) (. .)))",
+			"dependency_tree": "-\u003e Gandoki/NNP (root)\n  -\u003e creative/JJ (dep)\n    -\u003e because/IN (mark)\n    -\u003e he/PRP (nsubj)\n    -\u003e is/VBZ (cop)\n    -\u003e very/RB (advmod)\n",
+			"token": "Gandoki,because,he,is,very,creative,.",
+			"lemma": "Gandoki,because,he,be,very,creative,.",
+			"ner": "(PERSON,Gandoki)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 44,
+			"sentence": "Julius Agwu gave the biggest platform so far ‘Crack Ya Ribs in Abuja two years ago.",
+			"parse_sentence": "(ROOT (S (NP (NNP Julius) (NNP Agwu)) (VP (VBD gave) (NP (DT the) (JJS biggest) (NN platform)) (VP (ADVP (RB so) (RB far)) (`` `) (VP (VB Crack) (NP (NNP Ya) (NNP Ribs)) (PP (IN in) (NP (NNP Abuja))) (ADVP (NP (CD two) (NNS years)) (RB ago))))) (. .)))",
+			"dependency_tree": "-\u003e gave/VBD (root)\n  -\u003e Agwu/NNP (nsubj)\n    -\u003e Julius/NNP (compound)\n  -\u003e platform/NN (dobj)\n    -\u003e the/DT (det)\n    -\u003e biggest/JJS (amod)\n  -\u003e Crack/VB (dep)\n    -\u003e far/RB (advmod)\n      -\u003e so/RB (advmod)\n    -\u003e Ribs/NNP (dobj)\n      -\u003e Ya/NNP (compound)\n    -\u003e Abuja/NNP (nmod:in)\n      -\u003e in/IN (case)\n    -\u003e ago/RB (advmod)\n      -\u003e years/NNS (nmod:npmod)\n        -\u003e two/CD (nummod)\n",
+			"token": "Julius,Agwu,gave,the,biggest,platform,so,far,`,Crack,Ya,Ribs,in,Abuja,two,years,ago,.",
+			"lemma": "Julius,Agwu,give,the,biggest,platform,so,far,`,crack,Ya,Ribs,in,Abuja,two,year,ago,.",
+			"ner": "(PERSON,Julius|Agwu),(DATE,two|years|ago),(LOCATION,Abuja)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 45,
+			"sentence": "Out of the big boys Julius Agwu is the one I roll with.",
+			"parse_sentence": "(ROOT (SINV (PP (IN Out) (PP (IN of) (NP (DT the) (JJ big) (NNS boys) (NNP Julius) (NNP Agwu)))) (VP (VBZ is)) (NP (NP (DT the) (CD one)) (SBAR (S (NP (PRP I)) (VP (VBP roll) (PP (IN with)))))) (. .)))",
+			"dependency_tree": "-\u003e is/VBZ (root)\n  -\u003e Agwu/NNP (nmod:out_of)\n    -\u003e Out/IN (case)\n      -\u003e of/IN (mwe)\n    -\u003e the/DT (det)\n    -\u003e big/JJ (amod)\n    -\u003e boys/NNS (compound)\n    -\u003e Julius/NNP (compound)\n  -\u003e one/CD (nsubj)\n    -\u003e the/DT (det)\n    -\u003e roll/VBP (acl:relcl)\n      -\u003e I/PRP (nsubj)\n      -\u003e with/IN (nmod)\n",
+			"token": "Out,of,the,big,boys,Julius,Agwu,is,the,one,I,roll,with,.",
+			"lemma": "out,of,the,big,boy,Julius,Agwu,be,the,one,I,roll,with,.",
+			"ner": "(PERSON,Julius|Agwu),(NUMBER,one)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 46,
+			"sentence": "about seven governors in attendance.",
+			"parse_sentence": "(ROOT (FRAG (NP (NP (QP (IN about) (CD seven)) (NNS governors)) (PP (IN in) (NP (NN attendance)))) (. .)))",
+			"dependency_tree": "-\u003e governors/NNS (root)\n  -\u003e seven/CD (nummod)\n    -\u003e about/IN (advmod)\n  -\u003e attendance/NN (nmod:in)\n    -\u003e in/IN (case)\n",
+			"token": "about,seven,governors,in,attendance,.",
+			"lemma": "about,seven,governor,in,attendance,.",
+			"ner": "(NUMBER,seven)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 47,
+			"sentence": "I traveled from Abuja to Kaduna to MC for the show.",
+			"parse_sentence": "(ROOT (S (NP (PRP I)) (VP (VBD traveled) (PP (PP (PP (IN from) (NP (NNP Abuja))) (PP (TO to) (NP (NNP Kaduna)))) (PP (TO to) (NP (NP (NNP MC)) (PP (IN for) (NP (DT the) (NN show))))))) (. .)))",
+			"dependency_tree": "-\u003e traveled/VBD (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e Abuja/NNP (nmod:from)\n    -\u003e from/IN (case)\n    -\u003e Kaduna/NNP (nmod:to)\n      -\u003e to/TO (case)\n    -\u003e MC/NNP (nmod:to)\n      -\u003e to/TO (case)\n      -\u003e show/NN (nmod:for)\n        -\u003e for/IN (case)\n        -\u003e the/DT (det)\n",
+			"token": "I,traveled,from,Abuja,to,Kaduna,to,MC,for,the,show,.",
+			"lemma": "I,travel,from,Abuja,to,Kaduna,to,MC,for,the,show,.",
+			"ner": "(LOCATION,Abuja|Kaduna)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 48,
+			"sentence": "My parents reside in Kaduna so I stopped by and when I told them I was going to be paid N150,000, my dad shouted Jesus!",
+			"parse_sentence": "(ROOT (S (NP (PRP$ My) (NNS parents)) (VP (VBP reside) (PP (IN in) (NP (NNP Kaduna))) (SBAR (IN so) (S (S (NP (PRP I)) (VP (VBD stopped) (PRT (IN by)))) (CC and) (S (SBAR (WHADVP (WRB when)) (S (NP (PRP I)) (VP (VBD told) (NP (PRP them)) (SBAR (S (NP (PRP I)) (VP (VBD was) (VP (VBG going) (S (VP (TO to) (VP (VB be) (VP (VBN paid) (S (NP (NN N150) (CD ,000)))))))))))))) (, ,) (NP (PRP$ my) (NN dad)) (VP (VBD shouted) (NP (NNP Jesus))))))) (. !)))",
+			"dependency_tree": "-\u003e reside/VBP (root)\n  -\u003e parents/NNS (nsubj)\n    -\u003e My/PRP$ (nmod:poss)\n  -\u003e Kaduna/NNP (nmod:in)\n    -\u003e in/IN (case)\n  -\u003e stopped/VBD (advcl)\n    -\u003e so/IN (mark)\n    -\u003e I/PRP (nsubj)\n    -\u003e by/IN (compound:prt)\n    -\u003e and/CC (cc)\n    -\u003e shouted/VBD (conj:and)\n      -\u003e told/VBD (advcl)\n        -\u003e when/WRB (advmod)\n        -\u003e I/PRP (nsubj)\n        -\u003e them/PRP (dobj)\n        -\u003e going/VBG (ccomp)\n          -\u003e I/PRP (nsubj)\n          -\u003e was/VBD (aux)\n          -\u003e paid/VBN (xcomp)\n            -\u003e to/TO (mark)\n            -\u003e be/VB (auxpass)\n            -\u003e N150/NN (xcomp)\n              -\u003e ,000/CD (nummod)\n      -\u003e dad/NN (nsubj)\n        -\u003e my/PRP$ (nmod:poss)\n      -\u003e Jesus/NNP (dobj)\n  -\u003e shouted/VBD (advcl)\n",
+			"token": "My,parents,reside,in,Kaduna,so,I,stopped,by,and,when,I,told,them,I,was,going,to,be,paid,N150,,000,,,my,dad,shouted,Jesus,!",
+			"lemma": "my,parent,reside,in,Kaduna,so,I,stop,by,and,when,I,tell,they,I,be,go,to,be,pay,n150,,000,,,my,dad,shout,Jesus,!",
+			"ner": "(PERSON,Jesus),(LOCATION,Kaduna),(NUMBER,,000)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 49,
+			"sentence": "I told them it was going to be live on television, my dad had to leave the house to where he could watch me.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP I)) (VP (VBD told) (NP (PRP them)) (SBAR (S (NP (PRP it)) (VP (VBD was) (VP (VBG going) (S (VP (TO to) (VP (VB be) (ADJP (JJ live) (PP (IN on) (NP (NN television))))))))))))) (, ,) (NP (PRP$ my) (NN dad)) (VP (VBD had) (S (VP (TO to) (VP (VB leave) (NP (DT the) (NN house)) (PP (TO to) (SBAR (WHADVP (WRB where)) (S (NP (PRP he)) (VP (MD could) (VP (VB watch) (NP (PRP me))))))))))) (. .)))",
+			"dependency_tree": "-\u003e had/VBD (root)\n  -\u003e told/VBD (ccomp)\n    -\u003e I/PRP (nsubj)\n    -\u003e them/PRP (dobj)\n    -\u003e going/VBG (ccomp)\n      -\u003e it/PRP (nsubj)\n      -\u003e was/VBD (aux)\n      -\u003e live/JJ (xcomp)\n        -\u003e to/TO (mark)\n        -\u003e be/VB (cop)\n        -\u003e television/NN (nmod:on)\n          -\u003e on/IN (case)\n  -\u003e dad/NN (nsubj)\n    -\u003e my/PRP$ (nmod:poss)\n  -\u003e leave/VB (xcomp)\n    -\u003e to/TO (mark)\n    -\u003e house/NN (dobj)\n      -\u003e the/DT (det)\n    -\u003e watch/VB (advcl)\n      -\u003e to/TO (mark)\n      -\u003e where/WRB (advmod)\n      -\u003e he/PRP (nsubj)\n      -\u003e could/MD (aux)\n      -\u003e me/PRP (dobj)\n",
+			"token": "I,told,them,it,was,going,to,be,live,on,television,,,my,dad,had,to,leave,the,house,to,where,he,could,watch,me,.",
+			"lemma": "I,tell,they,it,be,go,to,be,live,on,television,,,my,dad,have,to,leave,the,house,to,where,he,could,watch,I,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 50,
+			"sentence": "This was the reason why my father finally allowed television in the house, though only for listening to news.",
+			"parse_sentence": "(ROOT (S (NP (DT This)) (VP (VBD was) (NP (NP (DT the) (NN reason)) (SBAR (WHADVP (WRB why)) (S (NP (PRP$ my) (NN father)) (VP (ADVP (RB finally)) (VBD allowed) (NP (NN television)) (PP (IN in) (NP (DT the) (NN house))))))) (, ,) (SBAR (IN though) (FRAG (ADVP (RB only)) (PP (IN for) (S (VP (VBG listening) (PP (TO to) (NP (NN news))))))))) (. .)))",
+			"dependency_tree": "-\u003e reason/NN (root)\n  -\u003e This/DT (nsubj)\n  -\u003e was/VBD (cop)\n  -\u003e the/DT (det)\n  -\u003e allowed/VBD (acl:relcl)\n    -\u003e why/WRB (advmod)\n    -\u003e father/NN (nsubj)\n      -\u003e my/PRP$ (nmod:poss)\n    -\u003e finally/RB (advmod)\n    -\u003e television/NN (dobj)\n    -\u003e house/NN (nmod:in)\n      -\u003e in/IN (case)\n      -\u003e the/DT (det)\n  -\u003e only/RB (advcl)\n    -\u003e though/IN (mark)\n    -\u003e listening/VBG (dep)\n      -\u003e for/IN (mark)\n      -\u003e news/NN (nmod:to)\n        -\u003e to/TO (case)\n",
+			"token": "This,was,the,reason,why,my,father,finally,allowed,television,in,the,house,,,though,only,for,listening,to,news,.",
+			"lemma": "this,be,the,reason,why,my,father,finally,allow,television,in,the,house,,,though,only,for,listen,to,news,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 51,
+			"sentence": "He was proud to tell all who cared to listen I am his third son.",
+			"parse_sentence": "(ROOT (S (NP (PRP He)) (VP (VBD was) (ADJP (JJ proud) (S (VP (TO to) (VP (VB tell) (NP (NP (DT all)) (SBAR (WHNP (WP who)) (S (VP (VBD cared) (S (VP (TO to) (VP (VB listen) (SBAR (S (NP (PRP I)) (VP (VBP am) (NP (PRP$ his) (JJ third) (NN son))))))))))))))))) (. .)))",
+			"dependency_tree": "-\u003e proud/JJ (root)\n  -\u003e He/PRP (nsubj)\n  -\u003e was/VBD (cop)\n  -\u003e tell/VB (xcomp)\n    -\u003e to/TO (mark)\n    -\u003e all/DT (dobj)\n      -\u003e cared/VBD (acl:relcl)\n        -\u003e who/WP (nsubj)\n        -\u003e listen/VB (xcomp)\n          -\u003e to/TO (mark)\n          -\u003e son/NN (ccomp)\n            -\u003e I/PRP (nsubj)\n            -\u003e am/VBP (cop)\n            -\u003e his/PRP$ (nmod:poss)\n            -\u003e third/JJ (amod)\n",
+			"token": "He,was,proud,to,tell,all,who,cared,to,listen,I,am,his,third,son,.",
+			"lemma": "he,be,proud,to,tell,all,who,care,to,listen,I,be,he,third,son,.",
+			"ner": "(ORDINAL,third)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 52,
+			"sentence": "When I went back home after the show, as I was about leaving my dad asked me to knell down and he released some dangerous prayers of success on me.",
+			"parse_sentence": "(ROOT (FRAG (SBAR (WHADVP (WRB When)) (S (NP (PRP I)) (VP (VBD went) (ADVP (RB back)) (NP (NN home)) (PP (IN after) (NP (DT the) (NN show)))))) (, ,) (SBAR (SBAR (IN as) (S (NP (PRP I)) (VP (VBD was) (PP (IN about) (S (VP (VBG leaving) (S (NP (PRP$ my) (NN dad)) (VP (VBD asked) (NP (PRP me)) (S (VP (TO to) (VP (NN knell) (PRT (RB down))))))))))))) (CC and) (S (NP (PRP he)) (VP (VBD released) (NP (NP (DT some) (JJ dangerous) (NNS prayers)) (PP (IN of) (NP (NP (NN success)) (PP (IN on) (NP (PRP me))))))))) (. .)))",
+			"dependency_tree": "-\u003e went/VBD (root)\n  -\u003e When/WRB (advmod)\n  -\u003e I/PRP (nsubj)\n  -\u003e back/RB (advmod)\n  -\u003e home/NN (dobj)\n  -\u003e show/NN (nmod:after)\n    -\u003e after/IN (case)\n    -\u003e the/DT (det)\n  -\u003e leaving/VBG (dep)\n    -\u003e as/IN (mark)\n    -\u003e I/PRP (nsubj)\n    -\u003e was/VBD (cop)\n    -\u003e about/IN (mark)\n    -\u003e asked/VBD (ccomp)\n      -\u003e dad/NN (nsubj)\n        -\u003e my/PRP$ (nmod:poss)\n      -\u003e me/PRP (dobj)\n      -\u003e knell/NN (xcomp)\n        -\u003e to/TO (mark)\n        -\u003e down/RB (compound:prt)\n    -\u003e and/CC (cc)\n    -\u003e released/VBD (conj:and)\n      -\u003e he/PRP (nsubj)\n      -\u003e prayers/NNS (dobj)\n        -\u003e some/DT (det)\n        -\u003e dangerous/JJ (amod)\n        -\u003e success/NN (nmod:of)\n          -\u003e of/IN (case)\n          -\u003e me/PRP (nmod:on)\n            -\u003e on/IN (case)\n  -\u003e released/VBD (dep)\n",
+			"token": "When,I,went,back,home,after,the,show,,,as,I,was,about,leaving,my,dad,asked,me,to,knell,down,and,he,released,some,dangerous,prayers,of,success,on,me,.",
+			"lemma": "when,I,go,back,home,after,the,show,,,as,I,be,about,leave,my,dad,ask,I,to,knell,down,and,he,release,some,dangerous,prayer,of,success,on,I,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 53,
+			"sentence": "From following people, Triple white gave me the platform from whence people began to reckon with me.",
+			"parse_sentence": "(ROOT (S (PP (IN From) (S (VP (VBG following) (NP (NNS people))))) (, ,) (NP (JJ Triple) (JJ white)) (VP (VBD gave) (NP (PRP me)) (NP (NP (DT the) (NN platform)) (SBAR (IN from) (S (NP (NN whence) (NNS people)) (VP (VBD began) (S (VP (TO to) (VP (VB reckon) (PP (IN with) (NP (PRP me))))))))))) (. .)))",
+			"dependency_tree": "-\u003e gave/VBD (root)\n  -\u003e following/VBG (advcl)\n    -\u003e From/IN (mark)\n    -\u003e people/NNS (dobj)\n  -\u003e white/JJ (nsubj)\n    -\u003e Triple/JJ (amod)\n  -\u003e me/PRP (iobj)\n  -\u003e platform/NN (dobj)\n    -\u003e the/DT (det)\n    -\u003e began/VBD (acl:relcl)\n      -\u003e from/IN (mark)\n      -\u003e people/NNS (nsubj)\n        -\u003e whence/NN (compound)\n      -\u003e reckon/VB (xcomp)\n        -\u003e to/TO (mark)\n        -\u003e me/PRP (nmod:with)\n          -\u003e with/IN (case)\n",
+			"token": "From,following,people,,,Triple,white,gave,me,the,platform,from,whence,people,began,to,reckon,with,me,.",
+			"lemma": "from,follow,people,,,triple,white,give,I,the,platform,from,whence,people,begin,to,reckon,with,I,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 54,
+			"sentence": "I have gotten so much applaud and accolade and all those encouragements made me to sit up.",
+			"parse_sentence": "(ROOT (S (NP (PRP I)) (VP (VBP have) (VP (VBN gotten) (S (S (NP (RB so) (JJ much)) (VP (VBP applaud))) (CC and) (S (NP (NN accolade) (CC and) (NP (PDT all) (DT those) (NNS encouragements))) (VP (VBD made) (NP (PRP me)) (S (VP (TO to) (VP (VB sit) (PRT (RP up)))))))))) (. .)))",
+			"dependency_tree": "-\u003e gotten/VBN (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e have/VBP (aux)\n  -\u003e applaud/VBP (xcomp)\n    -\u003e much/JJ (nsubj)\n      -\u003e so/RB (advmod)\n    -\u003e and/CC (cc)\n    -\u003e made/VBD (conj:and)\n      -\u003e accolade/NN (nsubj)\n        -\u003e and/CC (cc)\n        -\u003e encouragements/NNS (conj:and)\n          -\u003e all/PDT (det:predet)\n          -\u003e those/DT (det)\n      -\u003e encouragements/NNS (nsubj)\n      -\u003e me/PRP (dobj)\n      -\u003e sit/VB (advcl)\n        -\u003e to/TO (mark)\n        -\u003e up/RP (compound:prt)\n  -\u003e made/VBD (xcomp)\n",
+			"token": "I,have,gotten,so,much,applaud,and,accolade,and,all,those,encouragements,made,me,to,sit,up,.",
+			"lemma": "I,have,get,so,much,applaud,and,accolade,and,all,those,encouragement,make,I,to,sit,up,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 55,
+			"sentence": "Now I have a lot of competitors in the Chinese speaking comedy, the point is that I have been able to carve a niche for myself and that is helping me.",
+			"parse_sentence": "(ROOT (S (S (ADVP (RB Now)) (NP (PRP I)) (VP (VBP have) (NP (NP (DT a) (NN lot)) (PP (IN of) (NP (NNS competitors)))) (PP (IN in) (NP (DT the) (JJ Chinese) (NN speaking) (NN comedy))))) (, ,) (NP (DT the) (NN point)) (VP (VBZ is) (SBAR (IN that) (S (S (NP (PRP I)) (VP (VBP have) (VP (VBN been) (ADJP (JJ able) (S (VP (TO to) (VP (VB carve) (NP (DT a) (NN niche)) (PP (IN for) (NP (PRP myself)))))))))) (CC and) (S (NP (DT that)) (VP (VBZ is) (VP (VBG helping) (NP (PRP me)))))))) (. .)))",
+			"dependency_tree": "-\u003e is/VBZ (root)\n  -\u003e have/VBP (ccomp)\n    -\u003e Now/RB (advmod)\n    -\u003e I/PRP (nsubj)\n    -\u003e lot/NN (dobj)\n      -\u003e a/DT (det)\n      -\u003e competitors/NNS (nmod:of)\n        -\u003e of/IN (case)\n    -\u003e comedy/NN (nmod:in)\n      -\u003e in/IN (case)\n      -\u003e the/DT (det)\n      -\u003e Chinese/JJ (amod)\n      -\u003e speaking/NN (compound)\n  -\u003e point/NN (nsubj)\n    -\u003e the/DT (det)\n  -\u003e able/JJ (ccomp)\n    -\u003e that/IN (mark)\n    -\u003e I/PRP (nsubj)\n    -\u003e have/VBP (aux)\n    -\u003e been/VBN (cop)\n    -\u003e carve/VB (xcomp)\n      -\u003e to/TO (mark)\n      -\u003e niche/NN (dobj)\n        -\u003e a/DT (det)\n      -\u003e myself/PRP (nmod:for)\n        -\u003e for/IN (case)\n    -\u003e and/CC (cc)\n    -\u003e helping/VBG (conj:and)\n      -\u003e that/DT (nsubj)\n      -\u003e is/VBZ (aux)\n      -\u003e me/PRP (dobj)\n  -\u003e helping/VBG (ccomp)\n",
+			"token": "Now,I,have,a,lot,of,competitors,in,the,Chinese,speaking,comedy,,,the,point,is,that,I,have,been,able,to,carve,a,niche,for,myself,and,that,is,helping,me,.",
+			"lemma": "now,I,have,a,lot,of,competitor,in,the,chinese,speaking,comedy,,,the,point,be,that,I,have,be,able,to,carve,a,niche,for,myself,and,that,be,help,I,.",
+			"ner": "(MISC,Chinese),(DATE,Now)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 56,
+			"sentence": "Any challenges?",
+			"parse_sentence": "(ROOT (NP (NP (DT Any) (NNS challenges)) (. ?)))",
+			"dependency_tree": "-\u003e challenges/NNS (root)\n  -\u003e Any/DT (det)\n",
+			"token": "Any,challenges,?",
+			"lemma": "any,challenge,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 57,
+			"sentence": "I have faced so many challenges because of my quiet looks; people think I am not funny.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP I)) (VP (VBP have) (VP (VBN faced) (NP (ADJP (RB so) (JJ many)) (NNS challenges)) (PP (IN because) (IN of) (NP (PRP$ my) (JJ quiet) (NNS looks)))))) (: ;) (S (NP (NNS people)) (VP (VBP think) (SBAR (S (NP (PRP I)) (VP (VBP am) (RB not) (ADJP (JJ funny))))))) (. .)))",
+			"dependency_tree": "-\u003e faced/VBN (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e have/VBP (aux)\n  -\u003e challenges/NNS (dobj)\n    -\u003e many/JJ (amod)\n      -\u003e so/RB (advmod)\n  -\u003e looks/NNS (nmod:because_of)\n    -\u003e because/IN (case)\n      -\u003e of/IN (mwe)\n    -\u003e my/PRP$ (nmod:poss)\n    -\u003e quiet/JJ (amod)\n  -\u003e think/VBP (parataxis)\n    -\u003e people/NNS (nsubj)\n    -\u003e funny/JJ (ccomp)\n      -\u003e I/PRP (nsubj)\n      -\u003e am/VBP (cop)\n      -\u003e not/RB (neg)\n",
+			"token": "I,have,faced,so,many,challenges,because,of,my,quiet,looks,;,people,think,I,am,not,funny,.",
+			"lemma": "I,have,face,so,many,challenge,because,of,my,quiet,look,;,people,think,I,be,not,funny,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 58,
+			"sentence": "I may not be as you want but when I hold the microphone I come out with different styles apart from the Chinese language thing.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP I)) (VP (MD may) (RB not) (VP (VB be) (SBAR (IN as) (S (NP (PRP you)) (VP (VBP want))))))) (CC but) (S (SBAR (WHADVP (WRB when)) (S (NP (PRP I)) (VP (VBP hold) (NP (DT the) (NN microphone))))) (NP (PRP I)) (VP (VBP come) (PRT (RP out)) (PP (IN with) (NP (JJ different) (NNS styles))) (PP (RB apart) (PP (IN from) (NP (DT the) (JJ Chinese) (NN language) (NN thing)))))) (. .)))",
+			"dependency_tree": "-\u003e be/VB (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e may/MD (aux)\n  -\u003e not/RB (neg)\n  -\u003e want/VBP (advcl)\n    -\u003e as/IN (mark)\n    -\u003e you/PRP (nsubj)\n  -\u003e but/CC (cc)\n  -\u003e come/VBP (conj:but)\n    -\u003e hold/VBP (advcl)\n      -\u003e when/WRB (advmod)\n      -\u003e I/PRP (nsubj)\n      -\u003e microphone/NN (dobj)\n        -\u003e the/DT (det)\n    -\u003e I/PRP (nsubj)\n    -\u003e out/RP (compound:prt)\n    -\u003e styles/NNS (nmod:with)\n      -\u003e with/IN (case)\n      -\u003e different/JJ (amod)\n    -\u003e thing/NN (advcl:apart_from)\n      -\u003e apart/RB (case)\n        -\u003e from/IN (mwe)\n      -\u003e the/DT (det)\n      -\u003e Chinese/JJ (amod)\n      -\u003e language/NN (compound)\n",
+			"token": "I,may,not,be,as,you,want,but,when,I,hold,the,microphone,I,come,out,with,different,styles,apart,from,the,Chinese,language,thing,.",
+			"lemma": "I,may,not,be,as,you,want,but,when,I,hold,the,microphone,I,come,out,with,different,style,apart,from,the,chinese,language,thing,.",
+			"ner": "(MISC,Chinese)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 59,
+			"sentence": "How many languages do you speak?",
+			"parse_sentence": "(ROOT (SBARQ (WHNP (WHADJP (WRB How) (JJ many)) (NNS languages)) (SQ (VBP do) (NP (PRP you)) (VP (VB speak))) (. ?)))",
+			"dependency_tree": "-\u003e speak/VB (root)\n  -\u003e languages/NNS (dobj)\n    -\u003e many/JJ (amod)\n      -\u003e How/WRB (advmod)\n  -\u003e do/VBP (aux)\n  -\u003e you/PRP (nsubj)\n",
+			"token": "How,many,languages,do,you,speak,?",
+			"lemma": "how,many,language,do,you,speak,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 60,
+			"sentence": "I speak about 4 languages fluently; Igbo, Hausa, Yoruba, partly Delta and 10% of Chinese.",
+			"parse_sentence": "(ROOT (S (S (NP (PRP I)) (VP (VBP speak) (NP (QP (IN about) (CD 4)) (NNS languages)) (ADVP (RB fluently)))) (: ;) (S (NP (NP (NNP Igbo)) (, ,) (NP (NP (NNP Hausa)) (, ,) (NP (NNP Yoruba))) (, ,)) (NP (NP (RB partly) (NN Delta)) (CC and) (NP (NP (CD 10) (NN %)) (PP (IN of) (NP (NNP Chinese)))))) (. .)))",
+			"dependency_tree": "-\u003e speak/VBP (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e languages/NNS (dobj)\n    -\u003e 4/CD (nummod)\n      -\u003e about/IN (advmod)\n  -\u003e fluently/RB (advmod)\n  -\u003e Delta/NN (parataxis)\n    -\u003e Igbo/NNP (dep)\n      -\u003e Hausa/NNP (appos)\n        -\u003e Yoruba/NNP (appos)\n    -\u003e partly/RB (advmod)\n    -\u003e and/CC (cc)\n    -\u003e %/NN (conj:and)\n      -\u003e 10/CD (nummod)\n      -\u003e Chinese/NNP (nmod:of)\n        -\u003e of/IN (case)\n  -\u003e %/NN (parataxis)\n",
+			"token": "I,speak,about,4,languages,fluently,;,Igbo,,,Hausa,,,Yoruba,,,partly,Delta,and,10,%,of,Chinese,.",
+			"lemma": "I,speak,about,4,language,fluently,;,Igbo,,,Hausa,,,Yoruba,,,partly,delta,and,10,%,of,Chinese,.",
+			"ner": "(ORGANIZATION,Hausa|Delta),(MISC,Chinese),(NUMBER,4),(PERCENT,10|%),(PERSON,Yoruba)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 61,
+			"sentence": "Did you actually get those titles?",
+			"parse_sentence": "(ROOT (SQ (VBD Did) (NP (PRP you)) (ADVP (RB actually)) (VP (VBP get) (NP (DT those) (NNS titles))) (. ?)))",
+			"dependency_tree": "-\u003e get/VBP (root)\n  -\u003e Did/VBD (aux)\n  -\u003e you/PRP (nsubj)\n  -\u003e actually/RB (advmod)\n  -\u003e titles/NNS (dobj)\n    -\u003e those/DT (det)\n",
+			"token": "Did,you,actually,get,those,titles,?",
+			"lemma": "do,you,actually,get,those,title,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 62,
+			"sentence": "Yes, people gave me.",
+			"parse_sentence": "(ROOT (S (INTJ (UH Yes)) (, ,) (NP (NNS people)) (VP (VBD gave) (NP (PRP me))) (. .)))",
+			"dependency_tree": "-\u003e gave/VBD (root)\n  -\u003e Yes/UH (discourse)\n  -\u003e people/NNS (nsubj)\n  -\u003e me/PRP (dobj)\n",
+			"token": "Yes,,,people,gave,me,.",
+			"lemma": "yes,,,people,give,I,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 63,
+			"sentence": "What inspires you?",
+			"parse_sentence": "(ROOT (SBARQ (WHNP (WDT What)) (SQ (VP (VBZ inspires) (NP (PRP you)))) (. ?)))",
+			"dependency_tree": "-\u003e inspires/VBZ (root)\n  -\u003e What/WDT (nsubj)\n  -\u003e you/PRP (dobj)\n",
+			"token": "What,inspires,you,?",
+			"lemma": "what,inspire,you,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 64,
+			"sentence": "I like telling stories.",
+			"parse_sentence": "(ROOT (S (NP (PRP I)) (VP (VBP like) (VP (VBG telling) (NP (NNS stories)))) (. .)))",
+			"dependency_tree": "-\u003e like/VBP (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e telling/VBG (xcomp)\n    -\u003e stories/NNS (dobj)\n",
+			"token": "I,like,telling,stories,.",
+			"lemma": "I,like,tell,story,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 65,
+			"sentence": "Are you strictly into gospel comedy?",
+			"parse_sentence": "(ROOT (SQ (VBP Are) (NP (PRP you)) (PP (ADVP (RB strictly)) (IN into) (NP (NN gospel) (NN comedy))) (. ?)))",
+			"dependency_tree": "-\u003e Are/VBP (root)\n  -\u003e you/PRP (nsubj)\n  -\u003e comedy/NN (nmod:into)\n    -\u003e strictly/RB (advmod)\n    -\u003e into/IN (case)\n    -\u003e gospel/NN (compound)\n",
+			"token": "Are,you,strictly,into,gospel,comedy,?",
+			"lemma": "be,you,strictly,into,gospel,comedy,?",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 66,
+			"sentence": "No, I want to see how I can measure up to that line.",
+			"parse_sentence": "(ROOT (S (INTJ (DT No)) (, ,) (NP (PRP I)) (VP (VBP want) (S (VP (TO to) (VP (VB see) (SBAR (WHADVP (WRB how)) (S (NP (PRP I)) (VP (MD can) (VP (VB measure) (PP (RP up) (PP (TO to) (NP (DT that) (NN line)))))))))))) (. .)))",
+			"dependency_tree": "-\u003e want/VBP (root)\n  -\u003e No/DT (discourse)\n  -\u003e I/PRP (nsubj)\n  -\u003e see/VB (xcomp)\n    -\u003e to/TO (mark)\n    -\u003e measure/VB (ccomp)\n      -\u003e how/WRB (advmod)\n      -\u003e I/PRP (nsubj)\n      -\u003e can/MD (aux)\n      -\u003e line/NN (advcl:to)\n        -\u003e up/RP (dep)\n        -\u003e to/TO (case)\n        -\u003e that/DT (det)\n",
+			"token": "No,,,I,want,to,see,how,I,can,measure,up,to,that,line,.",
+			"lemma": "no,,,I,want,to,see,how,I,can,measure,up,to,that,line,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 67,
+			"sentence": "The Bible is filled with comedy, even God is a comedian no disrespect.",
+			"parse_sentence": "(ROOT (S (S (NP (DT The) (NNP Bible)) (VP (VBZ is) (VP (VBN filled) (PP (IN with) (NP (NN comedy)))))) (, ,) (S (NP (RB even) (NNP God)) (VP (VBZ is) (NP (NP (DT a) (NN comedian)) (NP (DT no) (NN disrespect))))) (. .)))",
+			"dependency_tree": "-\u003e filled/VBN (root)\n  -\u003e Bible/NNP (nsubjpass)\n    -\u003e The/DT (det)\n  -\u003e is/VBZ (auxpass)\n  -\u003e comedy/NN (nmod:with)\n    -\u003e with/IN (case)\n  -\u003e comedian/NN (parataxis)\n    -\u003e God/NNP (nsubj)\n      -\u003e even/RB (advmod)\n    -\u003e is/VBZ (cop)\n    -\u003e a/DT (det)\n    -\u003e disrespect/NN (dep)\n      -\u003e no/DT (neg)\n",
+			"token": "The,Bible,is,filled,with,comedy,,,even,God,is,a,comedian,no,disrespect,.",
+			"lemma": "the,Bible,be,fill,with,comedy,,,even,God,be,a,comedian,no,disrespect,.",
+			"ner": "(MISC,Bible)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 68,
+			"sentence": "That is why he said in the book of Matthew that they that seat on the throne will laugh.",
+			"parse_sentence": "(ROOT (S (NP (DT That)) (VP (VBZ is) (SBAR (WHADVP (WRB why)) (S (NP (PRP he)) (VP (VBD said) (PP (IN in) (NP (NP (DT the) (NN book)) (PP (IN of) (NP (NNP Matthew))))) (SBAR (IN that) (PRP they) (SBAR (IN that) (S (NP (NP (NN seat)) (PP (IN on) (NP (DT the) (NN throne)))) (VP (MD will) (VP (NN laugh)))))))))) (. .)))",
+			"dependency_tree": "-\u003e is/VBZ (root)\n  -\u003e That/DT (nsubj)\n  -\u003e said/VBD (advcl)\n    -\u003e why/WRB (advmod)\n    -\u003e he/PRP (nsubj)\n    -\u003e book/NN (nmod:in)\n      -\u003e in/IN (case)\n      -\u003e the/DT (det)\n      -\u003e Matthew/NNP (nmod:of)\n        -\u003e of/IN (case)\n    -\u003e laugh/NN (dep)\n      -\u003e that/IN (mark)\n      -\u003e they/PRP (dep)\n      -\u003e that/IN (mark)\n      -\u003e seat/NN (nsubj)\n        -\u003e throne/NN (nmod:on)\n          -\u003e on/IN (case)\n          -\u003e the/DT (det)\n      -\u003e will/MD (aux)\n",
+			"token": "That,is,why,he,said,in,the,book,of,Matthew,that,they,that,seat,on,the,throne,will,laugh,.",
+			"lemma": "that,be,why,he,say,in,the,book,of,Matthew,that,they,that,seat,on,the,throne,will,laugh,.",
+			"ner": "(LOCATION,Matthew)",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 69,
+			"sentence": "Since I am a church boy and my parents don’t like what I am doing, I decided to measure up to say something funny that can change the life of someone.",
+			"parse_sentence": "(ROOT (S (SBAR (IN Since) (S (S (NP (PRP I)) (VP (VBP am) (NP (DT a) (NN church) (NN boy)))) (CC and) (S (NP (PRP$ my) (NNS parents)) (VP (VBP do) (RB n\u0027t) (VP (VB like) (SBAR (WHNP (WP what)) (S (NP (PRP I)) (VP (VBP am) (VP (VBG doing)))))))))) (, ,) (NP (PRP I)) (VP (VBD decided) (S (VP (TO to) (VP (VB measure) (PRT (RP up)) (S (VP (TO to) (VP (VB say) (NP (NP (NP (NN something)) (ADJP (JJ funny))) (SBAR (WHNP (WDT that)) (S (VP (MD can) (VP (VB change) (NP (NP (DT the) (NN life)) (PP (IN of) (NP (NN someone)))))))))))))))) (. .)))",
+			"dependency_tree": "-\u003e decided/VBD (root)\n  -\u003e boy/NN (advcl)\n    -\u003e Since/IN (mark)\n    -\u003e I/PRP (nsubj)\n    -\u003e am/VBP (cop)\n    -\u003e a/DT (det)\n    -\u003e church/NN (compound)\n    -\u003e and/CC (cc)\n    -\u003e like/VB (conj:and)\n      -\u003e parents/NNS (nsubj)\n        -\u003e my/PRP$ (nmod:poss)\n      -\u003e do/VBP (aux)\n      -\u003e n\u0027t/RB (neg)\n      -\u003e doing/VBG (ccomp)\n        -\u003e what/WP (dobj)\n        -\u003e I/PRP (nsubj)\n        -\u003e am/VBP (aux)\n  -\u003e like/VB (advcl)\n  -\u003e I/PRP (nsubj)\n  -\u003e measure/VB (xcomp)\n    -\u003e to/TO (mark)\n    -\u003e up/RP (compound:prt)\n    -\u003e say/VB (xcomp)\n      -\u003e to/TO (mark)\n      -\u003e something/NN (dobj)\n        -\u003e funny/JJ (amod)\n        -\u003e change/VB (acl:relcl)\n          -\u003e that/WDT (nsubj)\n          -\u003e can/MD (aux)\n          -\u003e life/NN (dobj)\n            -\u003e the/DT (det)\n            -\u003e someone/NN (nmod:of)\n              -\u003e of/IN (case)\n",
+			"token": "Since,I,am,a,church,boy,and,my,parents,do,n\u0027t,like,what,I,am,doing,,,I,decided,to,measure,up,to,say,something,funny,that,can,change,the,life,of,someone,.",
+			"lemma": "since,I,be,a,church,boy,and,my,parent,do,not,like,what,I,be,do,,,I,decide,to,measure,up,to,say,something,funny,that,can,change,the,life,of,someone,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 70,
+			"sentence": "My younger brother research the Bible for me, I also get inspired in church.",
+			"parse_sentence": "(ROOT (S (NP (NP (PRP$ My) (JJR younger) (NN brother) (NN research)) (NP (DT the) (NNP Bible)) (PP (IN for) (NP (PRP me)))) (, ,) (NP (PRP I)) (ADVP (RB also)) (VP (VBP get) (VP (VBN inspired) (PP (IN in) (NP (NN church))))) (. .)))",
+			"dependency_tree": "-\u003e inspired/VBN (root)\n  -\u003e research/NN (nsubjpass)\n    -\u003e My/PRP$ (nmod:poss)\n    -\u003e younger/JJR (amod)\n    -\u003e brother/NN (compound)\n    -\u003e Bible/NNP (dep)\n      -\u003e the/DT (det)\n    -\u003e me/PRP (nmod:for)\n      -\u003e for/IN (case)\n  -\u003e I/PRP (nsubjpass)\n  -\u003e also/RB (advmod)\n  -\u003e get/VBP (auxpass)\n  -\u003e church/NN (nmod:in)\n    -\u003e in/IN (case)\n",
+			"token": "My,younger,brother,research,the,Bible,for,me,,,I,also,get,inspired,in,church,.",
+			"lemma": "my,younger,brother,research,the,Bible,for,I,,,I,also,get,inspire,in,church,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, {
+			"sentence_id": 71,
+			"sentence": "I have brought out so many.",
+			"parse_sentence": "(ROOT (S (NP (PRP I)) (VP (VBP have) (VP (VBN brought) (PRT (RP out)) (NP (RB so) (JJ many)))) (. .)))",
+			"dependency_tree": "-\u003e brought/VBN (root)\n  -\u003e I/PRP (nsubj)\n  -\u003e have/VBP (aux)\n  -\u003e out/RP (compound:prt)\n  -\u003e many/JJ (dobj)\n    -\u003e so/RB (advmod)\n",
+			"token": "I,have,brought,out,so,many,.",
+			"lemma": "I,have,bring,out,so,many,.",
+			"ner": "",
+			"relation": "",
+			"sentiment": -1
+		}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+		"size0": 71
+	},
+	"corref": ""
+}

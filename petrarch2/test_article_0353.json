@@ -1,0 +1,86 @@
+{
+	"type":"story",
+	"doc_id":"hindu_cities20160829.0009",
+	"head_line":"Velankanni festival begins",
+	"date_line":"Tue, 30 Aug 2016 03:05:06 +0530",
+	"sentences":[
+		{
+			"sentence_id":1,
+			"sentence":"NAGAPATTINAM :TAMILNADU: 29/08/2016 : Our Lady of Health Velankanni Basilica Annual Flag hoisting, in progress, as thousands of devotees witnessing, in Nagapattinam district.Photo: B.Velankanni Raj  The 11-day annual feast of Shrine Basilica of Our Lady of Health, popularly called Annai Velankanni Matha, began in Velankanni on Monday evening with a huge procession and hoisting of the holy flag by Most Rev. M. Devadass Ambrose, Bishop of Thanjavur.",
+			"parse_sentence":"(ROOT (NP (NP (NNP NAGAPATTINAM)) (: :) (NP (NP (NNP TAMILNADU)) (: :) (NP (NP (CD 29/08/2016)) (: :) (NP (NP (NP (PRP$ Our) (NN Lady)) (PP (IN of) (NP (NP (NNP Health) (NNP Velankanni) (NN Basilica) (JJ Annual) (NN Flag)) (VP (VBG hoisting) (, ,) (PP (IN in) (NP (NN progress))) (, ,) (SBAR (IN as) (S (NP (NP (NP (NP (NNS thousands)) (PP (IN of) (NP (NNS devotees)))) (VP (VBG witnessing) (, ,) (PP (IN in) (NP (NNP Nagapattinam) (NNP district.Photo))))) (: :) (NP (NP (NNP B.Velankanni) (NNP Raj) (NNP The) (JJ 11-day) (JJ annual) (NN feast)) (PP (IN of) (NP (NP (NNP Shrine) (NN Basilica)) (PP (IN of) (NP (NP (PRP$ Our) (NN Lady)) (PP (IN of) (NP (NNP Health))))))) (, ,) (VP (ADVP (RB popularly)) (VBN called) (S (NP (NNP Annai) (NNP Velankanni) (NNP Matha)))) (, ,))) (VP (VBD began) (PP (IN in) (NP (NNP Velankanni))) (PP (IN on) (NP (NP (NNP Monday) (NN evening)) (PP (IN with) (NP (NP (DT a) (JJ huge) (NN procession)) (CC and) (NP (NP (NN hoisting)) (PP (IN of) (NP (DT the) (JJ holy) (NN flag))) (PP (IN by) (NP (JJS Most) (NNP Rev.) (NNP M.) (NNP Devadass) (NNP Ambrose))))))))))))))) (, ,) (NP (NP (NNP Bishop)) (PP (IN of) (NP (NNP Thanjavur))))))) (. .)))",
+			"dependency_tree":"-\u003e NAGAPATTINAM/NNP (root)\n  -\u003e TAMILNADU/NNP (dep)\n    -\u003e 29/08/2016/CD (dep)\n      -\u003e Lady/NN (dep)\n        -\u003e Our/PRP$ (nmod:poss)\n        -\u003e Flag/NN (nmod:of)\n          -\u003e of/IN (case)\n          -\u003e Health/NNP (compound)\n          -\u003e Velankanni/NNP (compound)\n          -\u003e Basilica/NN (compound)\n          -\u003e Annual/JJ (amod)\n          -\u003e hoisting/VBG (acl)\n            -\u003e progress/NN (nmod:in)\n              -\u003e in/IN (case)\n            -\u003e began/VBD (advcl)\n              -\u003e as/IN (mark)\n              -\u003e thousands/NNS (nsubj)\n                -\u003e devotees/NNS (nmod:of)\n                  -\u003e of/IN (case)\n                -\u003e witnessing/VBG (acl)\n                  -\u003e district.Photo/NNP (nmod:in)\n                    -\u003e in/IN (case)\n                    -\u003e Nagapattinam/NNP (compound)\n                -\u003e feast/NN (dep)\n                  -\u003e B.Velankanni/NNP (compound)\n                  -\u003e Raj/NNP (compound)\n                  -\u003e The/NNP (compound)\n                  -\u003e 11-day/JJ (amod)\n                  -\u003e annual/JJ (amod)\n                  -\u003e Basilica/NN (nmod:of)\n                    -\u003e of/IN (case)\n                    -\u003e Shrine/NNP (compound)\n                    -\u003e Lady/NN (nmod:of)\n                      -\u003e of/IN (case)\n                      -\u003e Our/PRP$ (nmod:poss)\n                      -\u003e Health/NNP (nmod:of)\n                        -\u003e of/IN (case)\n                  -\u003e called/VBN (acl)\n                    -\u003e popularly/RB (advmod)\n                    -\u003e Matha/NNP (xcomp)\n                      -\u003e Annai/NNP (compound)\n                      -\u003e Velankanni/NNP (compound)\n              -\u003e Velankanni/NNP (nmod:in)\n                -\u003e in/IN (case)\n              -\u003e evening/NN (nmod:on)\n                -\u003e on/IN (case)\n                -\u003e Monday/NNP (compound)\n                -\u003e procession/NN (nmod:with)\n                  -\u003e with/IN (case)\n                  -\u003e a/DT (det)\n                  -\u003e huge/JJ (amod)\n                  -\u003e and/CC (cc)\n                  -\u003e hoisting/NN (conj:and)\n                    -\u003e flag/NN (nmod:of)\n                      -\u003e of/IN (case)\n                      -\u003e the/DT (det)\n                      -\u003e holy/JJ (amod)\n                    -\u003e Ambrose/NNP (nmod:by)\n                      -\u003e by/IN (case)\n                      -\u003e Most/JJS (amod)\n                      -\u003e Rev./NNP (compound)\n                      -\u003e M./NNP (compound)\n                      -\u003e Devadass/NNP (compound)\n                -\u003e hoisting/NN (nmod:with)\n        -\u003e Bishop/NNP (appos)\n          -\u003e Thanjavur/NNP (nmod:of)\n            -\u003e of/IN (case)\n",
+			"token":"NAGAPATTINAM,:,TAMILNADU,:,29/08/2016,:,Our,Lady,of,Health,Velankanni,Basilica,Annual,Flag,hoisting,,,in,progress,,,as,thousands,of,devotees,witnessing,,,in,Nagapattinam,district.Photo,:,B.Velankanni,Raj,The,11-day,annual,feast,of,Shrine,Basilica,of,Our,Lady,of,Health,,,popularly,called,Annai,Velankanni,Matha,,,began,in,Velankanni,on,Monday,evening,with,a,huge,procession,and,hoisting,of,the,holy,flag,by,Most,Rev.,M.,Devadass,Ambrose,,,Bishop,of,Thanjavur,.",
+			"lemma":"NAGAPATTINAM,:,TAMILNADU,:,29/08/2016,:,we,lady,of,Health,Velankanni,basilica,annual,flag,hoist,,,in,progress,,,as,thousand,of,devotee,witness,,,in,Nagapattinam,district.Photo,:,B.Velankanni,Raj,The,11-day,annual,feast,of,Shrine,basilica,of,we,lady,of,Health,,,popularly,call,Annai,Velankanni,Matha,,,begin,in,Velankanni,on,Monday,evening,with,a,huge,procession,and,hoisting,of,the,holy,flag,by,most,Rev.,M.,Devadass,Ambrose,,,Bishop,of,Thanjavur,.",
+			"ner":"(SET,Annual|annual),(ORGANIZATION,Shrine|Basilica|of|Our|Lady|of|Health),(DATE,Monday),(NUMBER,29/08/2016),(LOCATION,NAGAPATTINAM|Nagapattinam|Velankanni|Thanjavur),(DURATION,11-day),(TIME,evening),(PERSON,Annai|Velankanni|Matha|M.|Devadass|Ambrose)",
+			"relation":"",
+			"sentiment":-1
+		},
+		{
+			"sentence_id":2,
+			"sentence":"Pilgrims from various parts of the country witnessed the flag hoisting ceremony.",
+			"parse_sentence":"(ROOT (S (NP (NP (NNPS Pilgrims)) (PP (IN from) (NP (NP (JJ various) (NNS parts)) (PP (IN of) (NP (DT the) (NN country)))))) (VP (VBD witnessed) (S (NP (DT the) (NN flag)) (VP (VBG hoisting) (NP (NN ceremony))))) (. .)))",
+			"dependency_tree":"-\u003e witnessed/VBD (root)\n  -\u003e Pilgrims/NNPS (nsubj)\n    -\u003e parts/NNS (nmod:from)\n      -\u003e from/IN (case)\n      -\u003e various/JJ (amod)\n      -\u003e country/NN (nmod:of)\n        -\u003e of/IN (case)\n        -\u003e the/DT (det)\n  -\u003e hoisting/VBG (dep)\n    -\u003e flag/NN (nsubj)\n      -\u003e the/DT (det)\n    -\u003e ceremony/NN (dobj)\n",
+			"token":"Pilgrims,from,various,parts,of,the,country,witnessed,the,flag,hoisting,ceremony,.",
+			"lemma":"Pilgrims,from,various,part,of,the,country,witness,the,flag,hoist,ceremony,.",
+			"ner":"",
+			"relation":"",
+			"sentiment":-1
+		},
+		{
+			"sentence_id":3,
+			"sentence":"Rev.Fr.A.M.Prabakar, Rector, and other priests of the shrine were present.",
+			"parse_sentence":"(ROOT (S (NP (NP (NNP Rev.Fr.A.M.Prabakar)) (, ,) (NP (NNP Rector)) (, ,) (CC and) (NP (NP (JJ other) (NNS priests)) (PP (IN of) (NP (DT the) (NN shrine))))) (VP (VBD were) (ADJP (JJ present))) (. .)))",
+			"dependency_tree":"-\u003e present/JJ (root)\n  -\u003e Rev.Fr.A.M.Prabakar/NNP (nsubj)\n    -\u003e Rector/NNP (conj:and)\n    -\u003e and/CC (cc)\n    -\u003e priests/NNS (conj:and)\n      -\u003e other/JJ (amod)\n      -\u003e shrine/NN (nmod:of)\n        -\u003e of/IN (case)\n        -\u003e the/DT (det)\n  -\u003e Rector/NNP (nsubj)\n  -\u003e priests/NNS (nsubj)\n  -\u003e were/VBD (cop)\n",
+			"token":"Rev.Fr.A.M.Prabakar,,,Rector,,,and,other,priests,of,the,shrine,were,present,.",
+			"lemma":"Rev.Fr.A.M.Prabakar,,,Rector,,,and,other,priest,of,the,shrine,be,present,.",
+			"ner":"(DATE,present)",
+			"relation":"",
+			"sentiment":-1
+		},
+		{
+			"sentence_id":4,
+			"sentence":"The illuminated and colourful car procession carrying the idol of Our Lady of Health would be held on September 7 and the lowering of Our Lady’s flag on September 8.",
+			"parse_sentence":"(ROOT (S (S (NP (NP (DT The) (ADJP (VBN illuminated) (CC and) (JJ colourful)) (NN car) (NN procession)) (VP (VBG carrying) (NP (NP (DT the) (NN idol)) (PP (IN of) (NP (NP (PRP$ Our) (NN Lady)) (PP (IN of) (NP (NNP Health)))))))) (VP (MD would) (VP (VB be) (VP (VBN held) (PP (IN on) (NP (NNP September) (CD 7))))))) (CC and) (S (NP (NP (DT the) (NN lowering)) (PP (IN of) (NP (NP (PRP$ Our) (NN Lady) (POS \u0027s)) (NN flag)))) (PP (IN on) (NP (NNP September) (CD 8)))) (. .)))",
+			"dependency_tree":"-\u003e held/VBN (root)\n  -\u003e procession/NN (nsubjpass)\n    -\u003e The/DT (det)\n    -\u003e illuminated/VBN (amod)\n      -\u003e and/CC (cc)\n      -\u003e colourful/JJ (conj:and)\n    -\u003e colourful/JJ (amod)\n    -\u003e car/NN (compound)\n    -\u003e carrying/VBG (acl)\n      -\u003e idol/NN (dobj)\n        -\u003e the/DT (det)\n        -\u003e Lady/NN (nmod:of)\n          -\u003e of/IN (case)\n          -\u003e Our/PRP$ (nmod:poss)\n          -\u003e Health/NNP (nmod:of)\n            -\u003e of/IN (case)\n  -\u003e would/MD (aux)\n  -\u003e be/VB (auxpass)\n  -\u003e September/NNP (nmod:on)\n    -\u003e on/IN (case)\n    -\u003e 7/CD (nummod)\n  -\u003e and/CC (cc)\n  -\u003e lowering/NN (conj:and)\n    -\u003e the/DT (det)\n    -\u003e flag/NN (nmod:of)\n      -\u003e of/IN (case)\n      -\u003e Lady/NN (nmod:poss)\n        -\u003e Our/PRP$ (nmod:poss)\n        -\u003e \u0027s/POS (case)\n    -\u003e September/NNP (dep)\n      -\u003e on/IN (case)\n      -\u003e 8/CD (nummod)\n",
+			"token":"The,illuminated,and,colourful,car,procession,carrying,the,idol,of,Our,Lady,of,Health,would,be,held,on,September,7,and,the,lowering,of,Our,Lady,\u0027s,flag,on,September,8,.",
+			"lemma":"the,illuminate,and,colourful,car,procession,carry,the,idol,of,we,lady,of,Health,would,be,hold,on,September,7,and,the,lowering,of,we,lady,\u0027s,flag,on,September,8,.",
+			"ner":"(DATE,September|7|September|8)",
+			"relation":"",
+			"sentiment":-1
+		},
+		{
+			"sentence_id":5,
+			"sentence":"Holy mass would be held in various languages during the festival.",
+			"parse_sentence":"(ROOT (S (NP (JJ Holy) (NN mass)) (VP (MD would) (VP (VB be) (VP (VBN held) (PP (IN in) (NP (JJ various) (NNS languages))) (PP (IN during) (NP (DT the) (NN festival)))))) (. .)))",
+			"dependency_tree":"-\u003e held/VBN (root)\n  -\u003e mass/NN (nsubjpass)\n    -\u003e Holy/JJ (amod)\n  -\u003e would/MD (aux)\n  -\u003e be/VB (auxpass)\n  -\u003e languages/NNS (nmod:in)\n    -\u003e in/IN (case)\n    -\u003e various/JJ (amod)\n  -\u003e festival/NN (nmod:during)\n    -\u003e during/IN (case)\n    -\u003e the/DT (det)\n",
+			"token":"Holy,mass,would,be,held,in,various,languages,during,the,festival,.",
+			"lemma":"holy,mass,would,be,hold,in,various,language,during,the,festival,.",
+			"ner":"",
+			"relation":"",
+			"sentiment":-1
+		},
+		{
+			"sentence_id":6,
+			"sentence":"The district administration and the Basilica authorities have made elaborate arrangements and provided basic amenities including protected drinking water and sanitary facilities to a large number of pilgrims attending the festival.",
+			"parse_sentence":"(ROOT (S (NP (NP (DT The) (NN district) (NN administration)) (CC and) (NP (DT the) (NN Basilica) (NNS authorities))) (VP (VBP have) (VP (VP (VBN made) (NP (JJ elaborate) (NNS arrangements))) (CC and) (VP (VBN provided) (NP (NP (JJ basic) (NNS amenities)) (PP (VBG including) (NP (NP (JJ protected) (NN drinking) (NN water)) (CC and) (NP (NP (JJ sanitary) (NNS facilities)) (PP (TO to) (NP (NP (DT a) (JJ large) (NN number)) (PP (IN of) (NP (NP (NNS pilgrims)) (VP (VBG attending) (NP (DT the) (NN festival)))))))))))))) (. .)))",
+			"dependency_tree":"-\u003e made/VBN (root)\n  -\u003e administration/NN (nsubj)\n    -\u003e The/DT (det)\n    -\u003e district/NN (compound)\n    -\u003e and/CC (cc)\n    -\u003e authorities/NNS (conj:and)\n      -\u003e the/DT (det)\n      -\u003e Basilica/NN (compound)\n  -\u003e authorities/NNS (nsubj)\n  -\u003e have/VBP (aux)\n  -\u003e arrangements/NNS (dobj)\n    -\u003e elaborate/JJ (amod)\n  -\u003e and/CC (cc)\n  -\u003e provided/VBN (conj:and)\n    -\u003e administration/NN (nsubj)\n    -\u003e amenities/NNS (dobj)\n      -\u003e basic/JJ (amod)\n      -\u003e water/NN (nmod:including)\n        -\u003e including/VBG (case)\n        -\u003e protected/JJ (amod)\n        -\u003e drinking/NN (compound)\n        -\u003e and/CC (cc)\n        -\u003e facilities/NNS (conj:and)\n          -\u003e sanitary/JJ (amod)\n          -\u003e number/NN (nmod:to)\n            -\u003e to/TO (case)\n            -\u003e a/DT (det)\n            -\u003e large/JJ (amod)\n            -\u003e pilgrims/NNS (nmod:of)\n              -\u003e of/IN (case)\n              -\u003e attending/VBG (acl)\n                -\u003e festival/NN (dobj)\n                  -\u003e the/DT (det)\n      -\u003e facilities/NNS (nmod:including)\n",
+			"token":"The,district,administration,and,the,Basilica,authorities,have,made,elaborate,arrangements,and,provided,basic,amenities,including,protected,drinking,water,and,sanitary,facilities,to,a,large,number,of,pilgrims,attending,the,festival,.",
+			"lemma":"the,district,administration,and,the,basilica,authority,have,make,elaborate,arrangement,and,provide,basic,amenity,include,protected,drinking,water,and,sanitary,facility,to,a,large,number,of,pilgrim,attend,the,festival,.",
+			"ner":"",
+			"relation":"",
+			"sentiment":-1
+		},
+		{
+			"sentence_id":7,
+			"sentence":"The police have made security arrangements for the pilgrims who came by special trains and buses.",
+			"parse_sentence":"(ROOT (S (NP (DT The) (NNS police)) (VP (VBP have) (VP (VBN made) (NP (NP (NN security) (NNS arrangements)) (PP (IN for) (NP (NP (DT the) (NNS pilgrims)) (SBAR (WHNP (WP who)) (S (VP (VBD came) (PP (IN by) (NP (JJ special) (NNS trains) (CC and) (NNS buses))))))))))) (. .)))",
+			"dependency_tree":"-\u003e made/VBN (root)\n  -\u003e police/NNS (nsubj)\n    -\u003e The/DT (det)\n  -\u003e have/VBP (aux)\n  -\u003e arrangements/NNS (dobj)\n    -\u003e security/NN (compound)\n    -\u003e pilgrims/NNS (nmod:for)\n      -\u003e for/IN (case)\n      -\u003e the/DT (det)\n      -\u003e came/VBD (acl:relcl)\n        -\u003e who/WP (nsubj)\n        -\u003e trains/NNS (nmod:by)\n          -\u003e by/IN (case)\n          -\u003e special/JJ (amod)\n          -\u003e and/CC (cc)\n          -\u003e buses/NNS (conj:and)\n        -\u003e buses/NNS (nmod:by)\n",
+			"token":"The,police,have,made,security,arrangements,for,the,pilgrims,who,came,by,special,trains,and,buses,.",
+			"lemma":"the,police,have,make,security,arrangement,for,the,pilgrim,who,come,by,special,train,and,bus,.",
+			"ner":"",
+			"relation":"",
+			"sentiment":-1
+		}
+	],
+	"corref":""
+}

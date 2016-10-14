@@ -1,0 +1,24 @@
+{
+	"type":"story",
+	"doc_id":"india_telegraph_bengal20160829.0003",
+	"head_line":"Bullet kills youth during police clash",
+	"date_line":"",
+	"sentences":{
+		"initialSize":16,
+		"array":[
+			{
+				"sentence_id":1,
+				"sentence":"Behrampore, Aug. 28: A youth died of a bullet wound he suffered during a clash between police and villagers on a highway in Farakka today over a roadblock to protest erratic power supply.",
+				"parse_sentence":"(ROOT (S (NP (NP (NP (NNP Behrampore)) (, ,) (NP (NNP Aug.) (CD 28))) (: :) (NP (DT A) (NN youth))) (VP (VBD died) (PP (IN of) (NP (NP (DT a) (NN bullet) (NN wound)) (SBAR (S (NP (PRP he)) (VP (VBD suffered) (PP (IN during) (NP (NP (DT a) (NN clash)) (PP (IN between) (NP (NN police) (CC and) (NNS villagers))) (PP (IN on) (NP (NP (DT a) (NN highway)) (PP (IN in) (NP (NNP Farakka))))))) (NP (NN today)) (PP (IN over) (NP (NP (DT a) (NN roadblock)) (SBAR (S (VP (TO to) (VP (VB protest) (NP (JJ erratic) (NN power) (NN supply)))))))))))))) (. .)))",
+				"dependency_tree":"-\u003e died/VBD (root)\n -\u003e Behrampore/NNP (nsubj)\n -\u003e Aug./NNP (appos)\n -\u003e 28/CD (nummod)\n -\u003e youth/NN (dep)\n -\u003e A/DT (det)\n -\u003e wound/NN (nmod:of)\n -\u003e of/IN (case)\n -\u003e a/DT (det)\n -\u003e bullet/NN (compound)\n -\u003e suffered/VBD (acl:relcl)\n -\u003e he/PRP (nsubj)\n -\u003e clash/NN (nmod:during)\n -\u003e during/IN (case)\n -\u003e a/DT (det)\n -\u003e police/NN (nmod:between)\n -\u003e between/IN (case)\n -\u003e and/CC (cc)\n -\u003e villagers/NNS (conj:and)\n -\u003e villagers/NNS (nmod:between)\n -\u003e highway/NN (nmod:on)\n -\u003e on/IN (case)\n -\u003e a/DT (det)\n -\u003e Farakka/NNP (nmod:in)\n -\u003e in/IN (case)\n -\u003e today/NN (nmod:tmod)\n -\u003e roadblock/NN (nmod:over)\n -\u003e over/IN (case)\n -\u003e a/DT (det)\n -\u003e protest/VB (acl)\n -\u003e to/TO (mark)\n -\u003e supply/NN (dobj)\n -\u003e erratic/JJ (amod)\n -\u003e power/NN (compound)\n",
+				"token":"Behrampore,,,Aug.,28,:,A,youth,died,of,a,bullet,wound,he,suffered,during,a,clash,between,police,and,villagers,on,a,highway,in,Farakka,today,over,a,roadblock,to,protest,erratic,power,supply,.",
+				"lemma":"Behrampore,,,Aug.,28,:,a,youth,die,of,a,bullet,wound,he,suffer,during,a,clash,between,police,and,villager,on,a,highway,in,Farakka,today,over,a,roadblock,to,protest,erratic,power,supply,.",
+				"ner":"(DATE,Aug.|28|today),(LOCATION,Behrampore|Farakka)",
+				"relation":"",
+				"sentiment":-1
+			}
+		]
+		
+	}
+	
+}

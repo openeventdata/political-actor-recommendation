@@ -1,0 +1,3 @@
+[console_scripts]
+petrarch2 = petrarch2.petrarch2:main
+
