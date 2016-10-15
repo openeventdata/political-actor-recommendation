@@ -37,7 +37,7 @@ new_actor_over_time = dict()
 from StringIO import StringIO
 
 
-folder_name = '/Users/sxs149331/Desktop/dataset_new/'
+folder_name = '/usr/local/dataset_new/'
 #folder_name = '/root/Desktop/dataset/'
 #folder_name = '/root/Desktop/test1/'
 
@@ -71,6 +71,8 @@ for input_file_name in sorted(os.listdir(folder_name)):
         nouns = []
 
 
+        # count the event code
+        event_code = dict()
         for k in dict_event.keys():
             new_actor_meta['doc_id'] = k
             if 'sents' in dict_event[k]:
@@ -82,8 +84,22 @@ for input_file_name in sorted(os.listdir(folder_name)):
                             if 'meta' in dict_event[k]['sents'][l]:
                                 nouns += dict_event[k]['sents'][l]['meta']['nouns_not_matched']
 
-        new_actor_meta['new_actor'] = list(set(nouns))
+                            if 'events' in dict_event[k]['sents'][l]:
+                                for e in dict_event[k]['sents'][l]['events']:
+                                    event_who = str(e[0]).replace('~','').replace('+','').replace('-','').replace('|','').strip()
+                                    event_whom = str(e[1]).replace('~','').replace('+','').replace('-','').replace('|','').strip()
+                                    if event_who in event_code:
+                                        event_code[event_who] += 1
+                                    else:
+                                        event_code[event_who] = 1
 
+                                    if event_whom in event_code:
+                                        event_code[event_whom] += 1
+                                    else:
+                                        event_code[event_whom] = 1
+
+        new_actor_meta['new_actor'] = list(set(nouns))
+        #new_actor_meta['event_code'] = event_code
 
 
         #print new_actor_meta
@@ -180,7 +196,9 @@ for input_file_name in sorted(os.listdir(folder_name)):
                 continue
             else:
                 temp_dict[key] = comp_dict[key]
+
         new_actor['new_actor'] = temp_dict
+        new_actor['event_code'] = event_code
 
         pprint.pprint(new_actor['new_actor'])
         #print  new_actor
