@@ -30,6 +30,31 @@ N = 10
 new_actor_over_time = dict()
 
 
+def compress(item_list=[], simCalculator=FuzzyClusterSimilarity()):
+    uf = UnionFind(item_list)
+
+    count = 1
+
+    for i in range(0, len(item_list)):
+        maxRatio = 70
+        maxMatched = None
+        p1 = uf.find(item_list[i])
+        print count
+        count += 1
+        for j in range(0, len(item_list)):
+            if i == j:
+                continue
+
+            p2 = uf.find(item_list[j])
+
+            ratio = simCalculator.measure(p1, p2)
+            if ratio > maxRatio:
+                maxRatio = ratio
+                maxMatched = item_list[j]
+        if maxMatched is not None:
+            uf.union(maxMatched, item_list[i])
+    return uf
+
 
 #input_file = open('/root/Desktop/core_nlp_out_large.txt') #open('/root/test_pet')
 #input_file = open('/root/test_pet2')
@@ -37,13 +62,15 @@ new_actor_over_time = dict()
 from StringIO import StringIO
 
 
-folder_name = '/usr/local/dataset_new/'
+folder_name = '../dataset_new/'
 #folder_name = '/root/Desktop/dataset/'
 #folder_name = '/root/Desktop/test1/'
 
 actor_dict = ActorDictionary()
 
 actorReolver = ActorResolver()
+
+window_actor_roles = {}
 
 for input_file_name in sorted(os.listdir(folder_name)):
     print ('reading file: ' + input_file_name)
@@ -52,6 +79,7 @@ for input_file_name in sorted(os.listdir(folder_name)):
 
     total_new_actor_list = []
     word_dic = dict()
+    window_actor_codes = {}
 
     for line in input_file:
 
@@ -199,7 +227,9 @@ for input_file_name in sorted(os.listdir(folder_name)):
 
         new_actor['new_actor'] = temp_dict
         new_actor['event_code'] = event_code
-
+        if 'CLINTON_WIN_DONALD_TRUMP' in temp_dict:
+            print new_actor['doc_id'], input_file_name
+            sys.exit()
         pprint.pprint(new_actor['new_actor'])
         #print  new_actor
 
@@ -220,41 +250,28 @@ for input_file_name in sorted(os.listdir(folder_name)):
     ##=========== ADDED CODE
     all_actor_names = []
     all_actor_freq = {}
+
     for item in total_new_actor_list:
         if 'new_actor' not in item:
             continue
+        code_dict = item['event_code']
 
         for key in item['new_actor']:
             all_actor_names.append(key)
             if key in all_actor_freq:
                 all_actor_freq[key] = all_actor_freq[key]+item['new_actor'][key][1]
+                # for k in code_dict:
+                #     if k in window_actor_codes[key]:
+                #         window_actor_codes[key][k] = window_actor_codes[key][k] + code_dict[k]
+                #     else:
+                #         window_actor_codes[key][k] = code_dict[k]
             else:
                 all_actor_freq[key] = item['new_actor'][key][1]
+                #window_actor_codes[key] = code_dict
 
     print "ACTOR NAMES FOUND: ", str(len(all_actor_names))
 
-    uf = UnionFind(all_actor_names)
-    clsSimilarity = FuzzyClusterSimilarity()
-
-    for i in range(0, len(all_actor_names)):
-        maxRatio = 70
-        maxMatched = None
-        p1 = uf.find(all_actor_names[i])
-
-        for j in range(0, len(all_actor_names)):
-            if i == j:
-                continue
-
-            p2 = uf.find(all_actor_names[j])
-
-            ratio = clsSimilarity.measure(p1, p2)
-            if ratio > maxRatio:
-                maxRatio = ratio
-                maxMatched = all_actor_names[j]
-        if maxMatched is not None:
-            uf.union(maxMatched, all_actor_names[i])
-        print i
-
+    uf = compress(item_list=all_actor_names)
 
     print "UNION COMPLETED"
 
@@ -262,20 +279,44 @@ for input_file_name in sorted(os.listdir(folder_name)):
         if 'new_actor' not in item:
             continue
         temp_dict = {}
+        temp_event_code = {}
 
         for key in item['new_actor']:
             sub_actor_list, count = item['new_actor'][key]
             parent = uf.find(key)
             if parent != key:
                 sub_actor_list.append(parent)
+                code_dict = window_actor_codes[key]
+
+                # for k in code_dict:
+                #     if k in window_actor_codes[parent]:
+                #         temp_event_code[k] = window_actor_codes[parent][k] + window_actor_codes[key][k]
+                #     else:
+                #         temp_event_code[k] = window_actor_codes[key][k]
 
             if parent not in temp_dict:
                 temp_dict[parent] = (sub_actor_list, all_actor_freq[parent]+count)
             else:
                 temp_dict[parent] = (sub_actor_list, count + temp_dict[parent][1])
         item['new_actor'] = temp_dict
+        #item['event_code'] = temp_event_code
 
     print "ENTRIES UPDATED"
+
+    #Collecting actor roles
+
+
+    for item in total_new_actor_list:
+        actors = item['new_actor']
+        for actor_key in actors:
+            if actor_key in window_actor_roles:
+                for role_key in item['event_code']:
+                    if role_key in window_actor_roles[actor_key]:
+                        window_actor_roles[actor_key][role_key] += item['event_code'][role_key]
+                    else:
+                        window_actor_roles[actor_key][role_key] = item['event_code'][role_key]
+            else:
+                window_actor_roles[actor_key] = item['event_code']
 
     #========== END OF ADDED CODE =================
 
@@ -321,6 +362,8 @@ for input_file_name in sorted(os.listdir(folder_name)):
             new_actor_over_time[actor_noun] = 1
 
 
+    # Replacement of code block above
+
 
 
 
@@ -328,6 +371,45 @@ for input_file_name in sorted(os.listdir(folder_name)):
     with open('../output/new_actor_td_df.txt', 'a+') as outfile:
         outfile.write("\nWindow "+str(count)+"\n")
         json.dump(sorted(new_actor_over_time.items(), key=lambda x : (-x[1], x[0])), outfile)
+
+recommended_actors = []
+for key in new_actor_over_time:
+    recommended_actors.append(key)
+
+
+uf = compress(item_list=recommended_actors)
+compressed_actor_roles = {}
+compressed_new_actors = {}
+for actor_name in recommended_actors:
+    parent_actor = uf.find(actor_name)
+
+    if parent_actor in compressed_new_actors:
+        compressed_new_actors[parent_actor] += new_actor_over_time[actor_name]
+    else:
+        compressed_new_actors[parent_actor] = new_actor_over_time[actor_name]
+
+for actor_name in recommended_actors:
+    parent = uf.find(actor_name)
+    if parent in compressed_actor_roles:
+        for k in window_actor_roles[actor_name]:
+            if k in compressed_actor_roles[parent]:
+                compressed_actor_roles[parent][k] += window_actor_roles[actor_name][k]
+            else:
+                compressed_actor_roles[parent][k] = window_actor_roles[actor_name][k]
+    else:
+        compressed_actor_roles[parent] = window_actor_roles[actor_name]
+
+
+with open('../output/new_actor_final.txt', 'w+') as outfile:
+    #outfile.write("\nWindow " + str(count) + "\n")
+    json.dump(sorted(compressed_new_actors.items(), key=lambda x: (-x[1], x[0])), outfile)
+    outfile.close()
+
+
+with open('../output/new_actor_role.txt', 'w+') as outfile:
+    json.dump(compressed_actor_roles, outfile)
+
+
 
 
 
