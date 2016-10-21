@@ -6,7 +6,7 @@ import re
 import sys
 import os
 
-
+import time
 
 from ClusterManager import ActorResolver
 from ClusterSImilarity import FuzzyClusterSimilarity
@@ -16,17 +16,20 @@ from ActorDictionary import ActorDictionary
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+current_actors = {}
+
 pp = pprint.PrettyPrinter(indent=2)
 
 discard_words_set = set(['THE', 'A', 'AN', 'OF', 'IN', 'AT', 'OUT', '', ' '])
 
 
 from EventCoder import EventCoder
- 
+
+start_time = time.clock()
 coder = EventCoder(petrGlobal={}) 
  
 another_coder = EventCoder(petrGlobal=coder.get_PETRGlobals())
-N = 10
+N = 30
 new_actor_over_time = dict()
 
 
@@ -221,13 +224,17 @@ for input_file_name in sorted(os.listdir(folder_name)):
         temp_dict = {}
         for key in comp_dict:
             if actor_dict.contains(key):
+                if key in current_actors:
+                    current_actors[key] += 1
+                else:
+                    current_actors[key] = 1
                 continue
             else:
                 temp_dict[key] = comp_dict[key]
 
         new_actor['new_actor'] = temp_dict
         new_actor['event_code'] = event_code
-        if 'CLINTON_WIN_DONALD_TRUMP' in temp_dict:
+        if 'DONALD_TRUMP_DONALD_TRUMP' in temp_dict:
             print new_actor['doc_id'], input_file_name
             sys.exit()
         pprint.pprint(new_actor['new_actor'])
@@ -399,6 +406,9 @@ for actor_name in recommended_actors:
     else:
         compressed_actor_roles[parent] = window_actor_roles[actor_name]
 
+end_time = time.clock()
+
+print "Time Required: ", str(end_time - start_time)
 
 with open('../output/new_actor_final.txt', 'w+') as outfile:
     #outfile.write("\nWindow " + str(count) + "\n")
@@ -408,6 +418,29 @@ with open('../output/new_actor_final.txt', 'w+') as outfile:
 
 with open('../output/new_actor_role.txt', 'w+') as outfile:
     json.dump(compressed_actor_roles, outfile)
+    outfile.close()
+
+with open('../output/current_actors.txt', 'w+') as outfile:
+    json.dump(current_actors, outfile)
+    outfile.close()
+
+
+
+excluded_actor_file = open("../output/List_Excluded_Actors")
+excluded_actor_list = []
+for line in excluded_actor_file:
+    excluded_actor_list.append(line.strip())
+
+count = 0
+
+excluded_actor_list = excluded_actor_list[:15]
+
+for w in compressed_new_actors.items():
+    if w[0] in excluded_actor_list:
+        count += 1
+        print w[0]
+print count
+
 
 
 

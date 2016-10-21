@@ -4,12 +4,15 @@ from ClusterSImilarity import FuzzyClusterSimilarity
 
 
 class ActorDictionary:
-    actor_filenames= ['Phoenix.Countries.actors.txt',
+
+    actor_filenames= ['Phoenix.Countries.actors_test.txt',
                       'Phoenix.International.actors.txt',
                       'Phoenix.MilNonState.actors.txt']
     folder = 'data/dictionaries'
 
     actor_set = set()
+
+    actor_roles = {}
 
     fcs = FuzzyClusterSimilarity()
 
@@ -33,14 +36,10 @@ class ActorDictionary:
 
     def contains(self, actorname):
         test = actorname.replace('_',' ').strip()
-        if ('VLADIMIR' in  test) or ('PUTIN' in test):
-            print 'Found'
+
 
         return test in self.actor_set
-        # for name in self.actor_set:
-        #     if self.fcs.measure(name, actorname) > self.THERSHOLD:
-        #         return True
-        # return False
+
 
 
 
