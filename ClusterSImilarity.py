@@ -38,26 +38,27 @@ class FuzzyClusterSimilarity(ClusterSimilarity):
 
 
 #==================================================================================================
-class LSHClusterSimilarity(ClusterSimilarity):
+class MinhashClusterSimilarity(ClusterSimilarity):
 
     NUM_PERM =128
 
     def measure(self, currentActor, newActor):
-        mh1 = MinHash(num_perm=self.NUM_PERM)
-        mh2 = MinHash(num_perm=self.NUM_PERM)
-        mh1.update(currentActor.encode('utf8'))
-        mh2.update(newActor.encode('utf8'))
-        lsh = MinHashLSH(threshold=0.5, num_perm=self.NUM_PERM)
-        lsh.insert(currentActor, mh1)
-        print lsh.query(mh2)
-        #print mh1.jaccard(mh2)
+        wordsCA = currentActor.split("_")
+        wordsNA = newActor.split("_")
+        m1, m2 = MinHash(), MinHash()
+        for d in wordsCA:
+            m1.update(d.encode('utf8'))
+        for d in wordsNA:
+            m2.update(d.encode('utf8'))
+        return m1.jaccard(m2)
+
 
 
 
 #===================================================================================================
-clusterSimilarity = FuzzyClusterSimilarity()
+clusterSimilarity = MinhashClusterSimilarity()
 
-actorFile  = open("data/dictionaries/Phoenix.International.actors.txt")
+actorFile  = open("petrarch2/data/dictionaries/Phoenix.International.actors.txt")
 
 currentActor = None
 actorNamesDict = {}
@@ -113,9 +114,7 @@ pprint(diffActorRatio)
 print clusterSimilarity.measure("Donald Trump", "Melanila Trump")
 
 
-lshCS = LSHClusterSimilarity()
 
-lshCS.measure("TRUMP", "TRUM")
 
 
 
