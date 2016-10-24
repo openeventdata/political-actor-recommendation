@@ -7,9 +7,11 @@ import sys
 import os
 
 import time
+import operator
 
 from ClusterManager import ActorResolver
-from ClusterSImilarity import FuzzyClusterSimilarity
+from ClusterSImilarityOLd import FuzzyClusterSimilarity
+from RoleDictionary import RoleDictionary
 from UnionFind import UnionFind
 from petrarch2 import PETRglobals
 from ActorDictionary import ActorDictionary
@@ -29,7 +31,7 @@ start_time = time.clock()
 coder = EventCoder(petrGlobal={}) 
  
 another_coder = EventCoder(petrGlobal=coder.get_PETRGlobals())
-N = 30
+N = 25
 new_actor_over_time = dict()
 
 
@@ -433,29 +435,34 @@ for line in excluded_actor_file:
 
 count = 0
 
-excluded_actor_list = excluded_actor_list[:15]
+extracted_actors = []
 
 for w in compressed_new_actors.items():
     if w[0] in excluded_actor_list:
         count += 1
+        extracted_actors.append(w[0])
         print w[0]
+print count
+
+role_dict = RoleDictionary()
+count = 0
+for actor in extracted_actors:
+    suggested_roles = compressed_actor_roles.get(actor)
+    sorted_list = sorted(suggested_roles.items(), key=lambda x:x[1])[-10:]
+    suggestion_set = set()
+
+    actual_roles = role_dict.roles(actor)
+    for key in actual_roles:
+       suggestion_set = actual_roles[key]
+    for i in range(0, len(sorted_list)):
+        print sorted_list[i]
+        if sorted_list[i][0] in suggestion_set:
+            count += 1
+            break
+
+    print  actual_roles, suggested_roles
+
 print count
 
 
 
-
-
-
-
-
-
-
-# from dateutil import parser
-# from datetime import datetime
-# 
-# dateObject = parser.parse("")
-# 
-# article_date = datetime.strftime(dateObject, '%Y%m%d') 
-# 
-# 
-# print article_date 

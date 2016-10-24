@@ -8,7 +8,7 @@ class RoleDictionary:
     actor_filenames= ['Phoenix.Countries.actors.txt',
                       'Phoenix.International.actors.txt',
                       'Phoenix.MilNonState.actors.txt']
-    folder = 'petrarch2/data/dictionaries'
+    folder = 'data/dictionaries'
 
     actor_set = set()
 
@@ -17,7 +17,8 @@ class RoleDictionary:
     similarityMeasure = FuzzyClusterSimilarity()
 
 
-    def __init__(self):
+    def __init__(self, similarityMeasure=FuzzyClusterSimilarity()):
+        self.similarityMeasure = similarityMeasure
         for filename in self.actor_filenames:
             fs = open(self.folder + "/" + filename)
             current_roles = set()
@@ -52,18 +53,19 @@ class RoleDictionary:
 
             fs.close()
 
-            pprint.pprint( self.actor_roles)
+            #pprint.pprint( self.actor_roles)
 
     def roles(self, actorname):
-        temp = actorname.replace('_',' ')
-        maxKey = None
-        maxMatch = 1.0
-        for key in self.actor_roles:
-            match = self.similarityMeasure.measure(key, temp)
-            if match > maxMatch:
-                maxKey = key
-                maxMatch = match
-        return {maxKey: self.actor_roles.get(maxKey)}
+        temp = actorname.replace('_',' ').strip()
+        # maxKey = None
+        # maxMatch = 100
+        # for key in self.actor_roles:
+        #     match = self.similarityMeasure.measure(key, temp)
+        #     if match > maxMatch:
+        #         maxKey = key
+        #         maxMatch = match
+
+        return {temp: self.actor_roles.get(temp)}
 
 print 'Running'
 
@@ -73,7 +75,7 @@ print "initialized"
 
 #roleDict.contains('test')
 
-print roleDict.roles('KOFI_ATTA_ANNAN_')
+print roleDict.roles('BARACK_OBAMA')
 
 
 

@@ -2,12 +2,10 @@ import re
 
 from ClusterSImilarity import FuzzyClusterSimilarity
 
-
+from petrarch2 import  PETRglobals
 class ActorDictionary:
 
-    actor_filenames= ['Phoenix.Countries.actors.txt',
-                      'Phoenix.International.actors.txt',
-                      'Phoenix.MilNonState.actors.txt']
+    actor_filenames= PETRglobals.ActorFileList
     folder = 'data/dictionaries'
 
     actor_set = set()
