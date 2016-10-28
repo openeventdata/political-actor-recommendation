@@ -10,7 +10,7 @@ import time
 import operator
 
 from ClusterManager import ActorResolver
-from ClusterSImilarityOLd import FuzzyClusterSimilarity
+#from ClusterSImilarityOLd import FuzzyClusterSimilarity
 from ClusterSImilarity import MinhashClusterSimilarity
 from RoleDictionary import RoleDictionary
 from UnionFind import UnionFind
@@ -32,7 +32,7 @@ start_time = time.clock()
 coder = EventCoder(petrGlobal={}) 
  
 another_coder = EventCoder(petrGlobal=coder.get_PETRGlobals())
-N = 25
+N = 30
 new_actor_over_time = dict()
 
 
@@ -467,7 +467,7 @@ for actor in extracted_actors:
     for i in range(0, len(sorted_list)):
         for key in suggestion_set:
             ratio = simCalculator.measure(key, sorted_list[i][0])
-            if ratio > maxRatio:
+            if ratio >= maxRatio:
                 maxRatio = ratio
                 maxMatched = sorted_list[i]
     if maxMatched is not None:

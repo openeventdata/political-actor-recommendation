@@ -1,7 +1,7 @@
 from datasketch import MinHash
 import operator
-data1 = ['Donald', 'Trump']
-data2 = ['Donald', 'J', 'Trump']
+data1 = ['TURGOV']
+data2 = ['TURGOV']
 
 m1, m2 = MinHash(), MinHash()
 for d in data1:

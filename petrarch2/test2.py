@@ -31,7 +31,8 @@ start_time = time.clock()
 coder = EventCoder(petrGlobal={}) 
  
 another_coder = EventCoder(petrGlobal=coder.get_PETRGlobals())
-N = 25
+N = 10
+
 new_actor_over_time = dict()
 
 
@@ -461,12 +462,12 @@ for actor in extracted_actors:
         if sorted_list[i][0] in suggestion_set:
             count += 1
             break
-    maxRatio = 1.0
+    maxRatio = 100
     maxMatched = None
     for i in range(0, len(sorted_list)):
         for key in suggestion_set:
             ratio = simCalculator.measure(key, sorted_list[i][0])
-            if ratio > maxRatio:
+            if ratio >= maxRatio:
                 maxRatio = ratio
                 maxMatched = sorted_list[i]
     if maxMatched is not None:

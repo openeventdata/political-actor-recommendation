@@ -31,7 +31,7 @@ start_time = time.clock()
 coder = EventCoder(petrGlobal={}) 
  
 another_coder = EventCoder(petrGlobal=coder.get_PETRGlobals())
-N = 25
+N = 10
 new_actor_over_time = dict()
 
 

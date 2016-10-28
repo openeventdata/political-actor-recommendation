@@ -42,14 +42,25 @@ class MinhashClusterSimilarity(ClusterSimilarity):
 
     NUM_PERM =128
 
+    cache = {}
+
+    def getHashed(self, name=[]):
+        m1 = None
+        if name in self.cache:
+            m1 = self.cache[name]
+        else:
+            m1 = MinHash()
+            words = name.split(' ')
+            for d in words:
+                m1.update(d.encode('utf8'))
+            self.cache[name] = m1
+        return m1
+
     def measure(self, currentActor, newActor):
-        wordsCA = currentActor.split("_")
-        wordsNA = newActor.split("_")
-        m1, m2 = MinHash(), MinHash()
-        for d in wordsCA:
-            m1.update(d.encode('utf8'))
-        for d in wordsNA:
-            m2.update(d.encode('utf8'))
+        ca = currentActor.replace("_"," ").strip()
+        na = newActor.replace("_"," ").strip()
+        m1 = self.getHashed(currentActor.replace("_", " ").strip())
+        m2 = self.getHashed(newActor.replace("_", " ").strip())
         val = 100 * m1.jaccard(m2)
         return int(val)
 
